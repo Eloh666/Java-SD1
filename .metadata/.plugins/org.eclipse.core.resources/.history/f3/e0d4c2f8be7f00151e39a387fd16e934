@@ -1,0 +1,34 @@
+public class Snake 
+{
+	String name;
+	private String type = "Snake";
+	private String cry = "''Shhhhh Shhhhh''";
+	String gender;
+	int age;
+	float weight;
+	float height;
+	
+	Snake(String inpName, String inpGender, int inpAge, float inpWeight, float inpHeight)
+	{
+		this.name = inpName;
+		this.gender = inpGender;
+		this.age = inpAge;
+		this.weight = inpWeight;
+		this.height = inpHeight;
+	}
+	
+	Snake()
+	{
+		this("Namless Snake","Male",1,1.5f,0.05f);
+	}
+	
+	String getType()
+	{
+		return type;
+	}
+	
+	String greet()
+	{
+		return cry;
+	}
+}

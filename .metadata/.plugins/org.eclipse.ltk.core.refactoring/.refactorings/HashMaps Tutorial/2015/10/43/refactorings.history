@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;TMTiteration.java&apos; to &apos;HashMaps Tutorial&apos;&#x0D;&#x0A;- Original project: &apos;HashMaps Tutorial&apos;&#x0D;&#x0A;- Destination element: &apos;HashMaps Tutorial&apos;&#x0D;&#x0A;- Original element: &apos;TMTiteration.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=HashMaps Tutorial" element1="/src&lt;{TMTiteration.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1445528549237" units="1" version="1.0"/>
+</session>

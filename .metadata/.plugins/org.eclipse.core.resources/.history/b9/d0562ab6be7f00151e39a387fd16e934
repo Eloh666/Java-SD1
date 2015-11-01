@@ -1,0 +1,34 @@
+public class Duck 
+{
+	String name;
+	private String type = "Duck";
+private String cry = "''Quack Quack''";
+	String gender;
+	int age;
+	float weight;
+	float height;
+	
+	Duck(String inpName, String inpGender, int inpAge, float inpWeight, float inpHeight)
+	{
+		this.name = inpName;
+		this.gender = inpGender;
+		this.age = inpAge;
+		this.weight = inpWeight;
+		this.height = inpHeight;
+	}
+	
+	Duck()
+	{
+		this("Namless Duck","Male",3,3,0.14f);
+	}
+	
+	String getType()
+	{
+		return type;
+	}
+	
+	String greet()
+	{
+		return cry;
+	}
+}

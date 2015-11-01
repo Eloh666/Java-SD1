@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Comp.java&apos; to &apos;NSS/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;Megalomania&apos;&#x0D;&#x0A;- Destination element: &apos;NSS/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;Comp.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=NSS/src&lt;" element1="/src&lt;{Comp.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1446384886259" units="1" version="1.0"/>
+</session>

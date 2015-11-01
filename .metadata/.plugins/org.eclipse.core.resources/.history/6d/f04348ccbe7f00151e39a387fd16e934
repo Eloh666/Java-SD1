@@ -1,0 +1,34 @@
+public class Monkey 
+{
+	String name;
+	private String type = "Monkey";
+	private String cry = "''Oo aa, Oo aa''";
+	String gender;
+	int age;
+	float weight;
+	float height;
+	
+	Monkey(String inpName, String inpGender, int inpAge, float inpWeight, float inpHeight)
+	{
+		this.name = inpName;
+		this.gender = inpGender;
+		this.age = inpAge;
+		this.weight = inpWeight;
+		this.height = inpHeight;
+	}
+	
+	Monkey()
+	{
+		this("Namless Monkey","Male",6,40,0.7f);
+	}
+	
+	String getType()
+	{
+		return type;
+	}
+	
+	String greet()
+	{
+		return cry;
+	}
+}

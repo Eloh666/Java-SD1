@@ -1,0 +1,34 @@
+public class Dolphin 
+{
+	String name;
+	private String type = "Dolphin";
+	private String cry = "''Eeeeeeeeeeee Eeeeeeeeeeeeeeeeee''";
+	String gender;
+	int age;
+	float weight;
+	float height;
+	
+	Dolphin(String inpName, String inpGender, int inpAge, float inpWeight, float inpHeight)
+	{
+		this.name = inpName;
+		this.gender = inpGender;
+		this.age = inpAge;
+		this.weight = inpWeight;
+		this.height = inpHeight;
+	}
+	
+	Dolphin()
+	{
+		this("Namless Dolphin","Male",24,100,0.6f);
+	}
+	
+	String getType()
+	{
+		return type;
+	}
+	
+	String greet()
+	{
+		return cry;
+	}
+}

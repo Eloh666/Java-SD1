@@ -1,0 +1,34 @@
+public class Tiger 
+{
+	String name;
+	private String type = "Tiger";
+	private String cry = "''Roar Roar''";
+	String gender;
+	int age;
+	float weight;
+	float height;
+	
+	Tiger(String inpName, String inpGender, int inpAge, float inpWeight, float inpHeight)
+	{
+		this.name = inpName;
+		this.gender = inpGender;
+		this.age = inpAge;
+		this.weight = inpWeight;
+		this.height = inpHeight;
+	}
+	
+	Tiger()
+	{
+		this("Namless Tiger","Male",25,200,0.60f);
+	}
+	
+	String getType()
+	{
+		return type;
+	}
+	
+	String greet()
+	{
+		return cry;
+	}
+}

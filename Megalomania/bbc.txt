@@ -1,0 +1,262 @@
+Afghanistan	Asia	647500	29928987	21500000000
+Albania	Europe	28748	3563112	17460000000
+Algeria	Africa	2381740	32531853	212300000000
+American Samoa	Oceania	199	57881	500000000
+Andorra	Europe	468	70549	1900000000
+Angola	Africa	1246700	11190786	23170000000
+Anguilla	Central America and the Caribbean	102	13254	112000000
+Antarctica	Antarctic Region	14000000	0	0
+Antigua and Barbuda	Central America and the Caribbean	443	68722	750000000
+Argentina	South America	2766890	39537943	483500000000
+Armenia	Asia	29800	2982904	13650000000
+Aruba	Central America and the Caribbean	193	71566	1940000000
+Ashmore and Cartier Islands	Southeast Asia	5	0	0
+Australia	Oceania	7686850	20090437	611700000000
+Austria	Europe	83870	8184691	255900000000
+Azerbaijan	Asia	86600	7911974	30010000000
+Bahamas, The	Central America and the Caribbean	13940	301790	5295000000
+Bahrain	Middle East	665	688345	13010000000
+Baker Island	Oceania	1	0	0
+Bangladesh	Asia	144000	144319628	275700000000
+Barbados	Central America and the Caribbean	431	279254	4569000000
+Bassas da India	Africa	0	0	0
+Belarus	Europe	207600	10300483	70500000000
+Belgium	Europe	30528	10364388	316200000000
+Belize	Central America and the Caribbean	22966	279457	1778000000
+Benin	Africa	112620	7460025	8338000000
+Bermuda	North America	53	65365	2330000000
+Bhutan	Asia	47000	2232291	2900000000
+Bolivia	South America	1098580	8857870	22330000000
+Bosnia and Herzegovina	Europe	51129	4025476	26210000000
+Botswana	Africa	600370	1640115	15050000000
+Bouvet Island	Antarctic Region	58	0	0
+Brazil	South America	8511965	186112794	1492000000000
+British Indian Ocean Territory	Political Map of the World	60	0	0
+British Virgin Islands	Central America and the Caribbean	153	22643	2498000000
+Brunei	Southeast Asia	5770	372361	6842000000
+Bulgaria	Europe	110910	7450349	61630000000
+Burkina Faso	Africa	274200	13925313	15740000000
+Burma	Southeast Asia	678500	42909464	74300000000
+Burundi	Africa	27830	6370609	4001000000
+Cambodia	Southeast Asia	181040	13607069	26990000000
+Cameroon	Africa	475440	16380005	30170000000
+Canada	North America	9984670	32805041	1023000000000
+Cape Verde	Political Map of the World	4033	418224	600000000
+Cayman Islands	Central America and the Caribbean	262	44270	1391000000
+Central African Republic	Africa	622984	3799897	4248000000
+Chad	Africa	1284000	9826419	15660000000
+Chile	South America	756950	15980912	169100000000
+China	Asia	9596960	1306313812	7262000000000
+Christmas Island	Southeast Asia	135	361	0
+Clipperton Island	Political Map of the World	6	0	0
+Cocos Islands	Southeast Asia	14	628	0
+Colombia	South America	1138910	42954279	281100000000
+Comoros	Africa	2170	671247	441000000
+Congo, Democratic Republic of the	Africa	2345410	60085804	42740000000
+Congo, Republic of the	Africa	342000	3039126	2324000000
+Cook Islands	Oceania	240	21388	105000000
+Coral Sea Islands	Oceania	3	0	0
+Costa Rica	Central America and the Caribbean	51100	4016173	37970000000
+Cote d'Ivoire	Africa	322460	17298040	24780000000
+Croatia	Europe	56542	4495904	50330000000
+Cuba	Central America and the Caribbean	110860	11346670	33920000000
+Cyprus	Middle East	9250	780133	15710000000
+Czech Republic	Europe	78866	10241138	172200000000
+Denmark	Europe	43094	5432335	174400000000
+Djibouti	Africa	23000	476703	619000000
+Dominica	Central America and the Caribbean	754	69029	384000000
+Dominican Republic	Central America and the Caribbean	48730	8950034	55680000000
+East Timor	Southeast Asia	15007	1040880	370000000
+Ecuador	South America	283560	13363593	49510000000
+Egypt	Africa	1001450	77505756	316300000000
+El Salvador	Central America and the Caribbean	21040	6704932	32350000000
+Equatorial Guinea	Africa	28051	535881	1270000000
+Eritrea	Africa	121320	4561599	4154000000
+Estonia	Europe	45226	1332893	19230000000
+Ethiopia	Africa	1127127	73053286	54890000000
+Europa Island	Africa	28	0	0
+Falkland Islands	South America	12173	2967	75000000
+Faroe Islands	Europe	1399	46962	1000000000
+Fiji	Oceania	18270	893354	5173000000
+Finland	Europe	338145	5223442	151200000000
+France	Europe	547030	60656178	1737000000000
+French Guiana	South America	91000	195506	1551000000
+French Polynesia	Oceania	4167	270485	4580000000
+French Southern and Antarctic Lands	Antarctic Region	7829	0	0
+Gabon	Africa	267667	1389201	7966000000
+Gambia, The	Africa	11300	1593256	2799000000
+Gaza Strip	Middle East	360	1376289	768000000
+Georgia	Asia	69700	4677401	14450000000
+Germany	Europe	357021	82431390	2362000000000
+Ghana	Africa	239460	21029853	48270000000
+Gibraltar	Europe	6	27884	769000000
+Glorioso Islands	Africa	5	0	0
+Greece	Europe	131940	10668354	226400000000
+Greenland	Arctic Region	2166086	56375	1100000000
+Grenada	Central America and the Caribbean	344	89502	440000000
+Guadeloupe	Central America and the Caribbean	1780	448713	3513000000
+Guam	Oceania	549	168564	3200000000
+Guatemala	Central America and the Caribbean	108890	14655189	59470000000
+Guernsey	Europe	78	65228	2590000000
+Guinea	Africa	245857	9467866	19500000000
+Guinea-Bissau	Africa	36120	1416027	1008000000
+Guyana	South America	214970	765283	2899000000
+Haiti	Central America and the Caribbean	27750	8121622	12050000000
+Heard Island and McDonald Islands	Antarctic Region	412	0	0
+Holy See (Vatican City)	Europe	0	921	0
+Honduras	Central America and the Caribbean	112090	6975204	18790000000
+Hong Kong	Southeast Asia	1092	6898686	234500000000
+Howland Island	Oceania	2	0	0
+Hungary	Europe	93030	10006835	149300000000
+Iceland	Arctic Region	103000	296737	9373000000
+India	Asia	3287590	1080264388	3319000000000
+Indonesia	Southeast Asia	1919440	241973879	827400000000
+Iran	Middle East	1648000	68017860	516700000000
+Iraq	Middle East	437072	26074906	54400000000
+Ireland	Europe	70280	4015676	126400000000
+Israel	Middle East	20770	6276883	129000000000
+Italy	Europe	301230	58103033	1609000000000
+Jamaica	Central America and the Caribbean	10991	2731832	11130000000
+Jan Mayen	Arctic Region	373	0	0
+Japan	Asia	377835	127417244	3745000000000
+Jarvis Island	Oceania	4	0	0
+Jersey	Europe	116	90812	3600000000
+Johnston Atoll	Oceania	3	361	0
+Jordan	Middle East	92300	5759732	25500000000
+Juan de Nova Island	Africa	4	0	0
+Kazakhstan	Asia	2717300	15185844	118400000000
+Kenya	Africa	582650	33829590	34680000000
+Kingman Reef	Oceania	1	0	0
+Kiribati	Oceania	811	103092	79000000
+Korea, North	Asia	120540	22912177	40000000000
+Korea, South	Asia	98480	48422644	925100000000
+Kuwait	Middle East	17820	2335648	48000000000
+Kyrgyzstan	Asia	198500	5146281	8495000000
+Laos	Southeast Asia	236800	6217141	11280000000
+Latvia	Europe	64589	2290237	26530000000
+Lebanon	Middle East	10400	3826018	18830000000
+Lesotho	Africa	30355	1867035	5892000000
+Liberia	Africa	111370	3482211	2903000000
+Libya	Africa	1759540	5765563	37480000000
+Liechtenstein	Europe	160	33717	825000000
+Lithuania	Europe	65200	3596617	45230000000
+Luxembourg	Europe	2586	468571	27270000000
+Macau	Southeast Asia	25	449198	9100000000
+Macedonia	Europe	25333	2045262	14400000000
+Madagascar	Africa	587040	18040341	14560000000
+Malawi	Africa	118480	12158924	7410000000
+Malaysia	Southeast Asia	329750	23953136	229300000000
+Maldives	Asia	300	349106	1250000000
+Mali	Africa	1240000	12291529	11000000000
+Malta	Europe	316	398534	7223000000
+Man, Isle of	Europe	572	75049	2113000000
+Marshall Islands	Oceania	181	59071	115000000
+Martinique	Central America and the Caribbean	1100	432900	6117000000
+Mauritania	Africa	1030700	3086859	5534000000
+Mauritius	Political Map of the World	2040	1230602	15680000000
+Mayotte	Africa	374	193633	466800000
+Mexico	North America	1972550	106202903	1006000000000
+Micronesia, Federated States of	Oceania	702	108105	277000000
+Midway Islands	Oceania	6	0	0
+Moldova	Europe	33843	4455421	8581000000
+Monaco	Europe	2	32409	870000000
+Mongolia	Asia	1564116	2791272	5332000000
+Montserrat	Central America and the Caribbean	102	9341	29000000
+Morocco	Africa	446550	32725847	134600000000
+Mozambique	Africa	801590	19406703	23380000000
+Namibia	Africa	825418	2030692	14760000000
+Nauru	Oceania	21	13048	60000000
+Navassa Island	Central America and the Caribbean	5	0	0
+Nepal	Asia	140800	27676547	39530000000
+Netherlands	Europe	41526	16407491	481100000000
+Netherlands Antilles	Central America and the Caribbean	960	219958	2450000000
+New Caledonia	Oceania	19060	216494	3158000000
+New Zealand	Oceania	268680	4035461	92510000000
+Nicaragua	Central America and the Caribbean	129494	5465100	12340000000
+Niger	Africa	1267000	11665937	9716000000
+Nigeria	Africa	923768	128771988	125700000000
+Niue	Oceania	260	2166	7600000
+Norfolk Island	Oceania	35	1828	0
+Northern Mariana Islands	Oceania	477	80362	900000000
+Norway	Europe	324220	4593041	183000000000
+Oman	Middle East	212460	3001583	38090000000
+Pakistan	Asia	803940	162419946	347300000000
+Palau	Oceania	458	20303	174000000
+Palmyra Atoll	Oceania	12	0	0
+Panama	Central America and the Caribbean	78200	3039150	20570000000
+Papua New Guinea	Oceania	462840	5545268	11990000000
+Paracel Islands	Southeast Asia	0	0	0
+Paraguay	South America	406750	6347884	29930000000
+Peru	South America	1285220	27925628	155300000000
+Philippines	Southeast Asia	300000	87857473	430600000000
+Pitcairn Islands	Oceania	47	46	0
+Poland	Europe	312685	38635144	463000000000
+Portugal	Europe	92391	10566212	188700000000
+Puerto Rico	Central America and the Caribbean	9104	3916632	68950000000
+Qatar	Middle East	11437	863051	19490000000
+Reunion	World	2517	776948	4570000000
+Romania	Europe	237500	22329977	171500000000
+Russia	Asia	17075200	143420309	1408000000000
+Rwanda	Africa	26338	8440820	10430000000
+Saint Helena	Africa	410	7460	18000000
+Saint Kitts and Nevis	Central America and the Caribbean	261	38958	339000000
+Saint Lucia	Central America and the Caribbean	616	166312	866000000
+Saint Pierre and Miquelon	North America	242	7012	48300000
+Saint Vincent and the Grenadines	Central America and the Caribbean	389	117534	342000000
+Samoa	Oceania	2944	177287	1000000000
+San Marino	Europe	61	28880	940000000
+Sao Tome and Principe	Africa	1001	187410	214000000
+Saudi Arabia	Middle East	1960582	26417599	310200000000
+Senegal	Africa	196190	11126832	18360000000
+Serbia and Montenegro	Europe	102350	10829175	26270000000
+Seychelles	Africa	455	81188	626000000
+Sierra Leone	Africa	71740	6017643	3335000000
+Singapore	Southeast Asia	692	4425720	120900000000
+Slovakia	Europe	48845	5431363	78890000000
+Slovenia	Europe	20273	2011070	39410000000
+Solomon Islands	Oceania	28450	538032	800000000
+Somalia	Africa	637657	8591629	4597000000
+South Africa	Africa	1219912	44344136	491400000000
+South Georgia and the South Sandwich Islands	Antarctic Region	3903	0	0
+Spain	Europe	504782	40341462	937600000000
+Spratly Islands	Southeast Asia	5	0	0
+Sri Lanka	Asia	65610	20064776	80580000000
+Sudan	Africa	2505810	40187486	76190000000
+Suriname	South America	163270	438144	1885000000
+Svalbard	Arctic Region	62049	2701	0
+Swaziland	Africa	17363	1173900	6018000000
+Sweden	Europe	449964	9001774	255400000000
+Switzerland	Europe	41290	7489370	251900000000
+Syria	Middle East	185180	18448752	60440000000
+Taiwan	Southeast Asia	35980	22894384	576200000000
+Tajikistan	Asia	143100	7163506	7950000000
+Tanzania	Africa	945087	36766356	23710000000
+Thailand	Southeast Asia	514000	65444371	524800000000
+Togo	Africa	56785	5681519	8684000000
+Tokelau	Oceania	10	1405	1500000
+Tonga	Oceania	748	112422	244000000
+Trinidad and Tobago	Central America and the Caribbean	5128	1088644	11480000000
+Tromelin Island	Africa	1	0	0
+Tunisia	Africa	163610	10074951	70880000000
+Turkey	Middle East	780580	69660559	508700000000
+Turkmenistan	Asia	488100	4952081	27600000000
+Turks and Caicos Islands	Central America and the Caribbean	430	20556	216000000
+Tuvalu	Oceania	26	11636	12200000
+Uganda	Africa	236040	27269482	39390000000
+Ukraine	Europe	603700	47425336	299100000000
+United Arab Emirates	Middle East	82880	2563212	63670000000
+United Kingdom	Europe	244820	60441457	1782000000000
+United States	North America	9631418	295734134	11750000000000
+Uruguay	South America	176220	3415920	49270000000
+Uzbekistan	Asia	447400	26851195	47590000000
+Vanuatu	Oceania	12200	205754	580000000
+Venezuela	South America	912050	25375281	145200000000
+Vietnam	Southeast Asia	329560	83535576	227200000000
+Virgin Islands	Central America and the Caribbean	352	108708	2500000000
+Wake Island	Oceania	6	0	0
+Wallis and Futuna	Oceania	274	16025	60000000
+West Bank	Middle East	5860	2385615	1800000000
+Western Sahara	Africa	266000	273008	0
+Yemen	Middle East	527970	20727063	16250000000
+Zambia	Africa	752614	11261795	9409000000
+Zimbabwe	Africa	390580	12746990	24370000000

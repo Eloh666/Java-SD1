@@ -1,0 +1,34 @@
+public class Dog 
+{
+	String name;
+	private String type = "Dog";
+	private String cry = "''Woof Woof''";
+	String gender;
+	int age;
+	float weight;
+	float height;
+	
+	Dog(String inpName, String inpGender, int inpAge, float inpWeight, float inpHeight)
+	{
+		this.name = inpName;
+		this.gender = inpGender;
+		this.age = inpAge;
+		this.weight = inpWeight;
+		this.height = inpHeight;
+	}
+	
+	Dog()
+	{
+		this("Namless Dog","Male",5,40,0.3f);
+	}
+	
+	String getType()
+	{
+		return type;
+	}
+	
+	String greet()
+	{
+		return cry;
+	}
+}
