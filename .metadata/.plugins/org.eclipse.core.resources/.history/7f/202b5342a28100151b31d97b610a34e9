@@ -1,0 +1,49 @@
+import java.util.Map;
+import java.util.TreeMap;
+
+
+public class Institution {
+	
+	private String institution;
+	private String ukpn;
+	private TreeMap<String,Cohort> cohorts;
+	
+	
+	public Institution(String inst, String ukpn)
+	{
+		this.institution = inst;
+		this.ukpn = ukpn;
+		this.cohorts = new TreeMap<String,Cohort>();
+	}
+	
+	
+	public String getInstitution() {
+		return institution;
+	}
+	
+	public void setInstitution(String institution) {
+		this.institution = institution;
+	}
+	
+	public String getUkpn() {
+		return ukpn;
+	}
+	
+	public void setUkpn(String ukpn) {
+		this.ukpn = ukpn;
+	}
+	
+	public TreeMap<String,Cohort> getCohorts() {
+		return cohorts;
+	}
+	
+	public void setCohorts(TreeMap<String,Cohort> cohorts) {
+		this.cohorts = cohorts;
+	}
+	
+	public void addCohort(String ey, Cohort cohort)
+	{
+		this.cohorts.put(key, cohort);
+	}
+
+}
