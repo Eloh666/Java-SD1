@@ -15,6 +15,12 @@ public class Elephant extends Animal
 		super.setAge(inpAge);
 		super.setWeight(inpWeight);
 		super.setHeight(inpHeight);
+		super.setMinAge(0);
+		super.setMaxAge(50);
+		super.setMinWeight(50);
+		super.setMaxWeight(3000);
+		super.setMinHeight(50);
+		super.setMaxHeight(4000);
 	}
 	
 	Elephant()

@@ -2,8 +2,8 @@
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_gQo18IAFEeWrD9CM3Y_fdQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_gQo18YAFEeWrD9CM3Y_fdQ" bindingContexts="_gQqFmIAFEeWrD9CM3Y_fdQ">
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ElementsLibrary.java&quot; tooltip=&quot;Hilarious Zoo IPA/src/ElementsLibrary.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hilarious Zoo IPA/src/ElementsLibrary.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Narrator.java&quot; tooltip=&quot;Hilarious Zoo/src/Narrator.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hilarious Zoo/src/Narrator.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Narrator.java&quot; tooltip=&quot;Hilarious Zoo IPA/src/Narrator.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hilarious Zoo IPA/src/Narrator.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;aaaa.java&quot; tooltip=&quot;Hilarious Zoo IPA/src/aaaa.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hilarious Zoo IPA/src/aaaa.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Parser.java&quot; tooltip=&quot;NSS_SDS/src/Parser.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/NSS_SDS/src/Parser.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TPH.java&quot; tooltip=&quot;TPH/src/TPH.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TPH/src/TPH.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Main.java&quot; tooltip=&quot;Megalomania/src/Main.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Megalomania/src/Main.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Tiger.java&quot; tooltip=&quot;Hilarious Zoo/src/Tiger.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hilarious Zoo/src/Tiger.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Tiger.java&quot; tooltip=&quot;Hilarious Zoo IPA/src/Tiger.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hilarious Zoo IPA/src/Tiger.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Elephant.java&quot; tooltip=&quot;Hilarious Zoo IPA/src/Elephant.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hilarious Zoo IPA/src/Elephant.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Animal.java&quot; tooltip=&quot;Hilarious Zoo IPA/src/Animal.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hilarious Zoo IPA/src/Animal.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Elephant.java&quot; tooltip=&quot;Hilarious Zoo/src/Elephant.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hilarious Zoo/src/Elephant.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Cat.java&quot; tooltip=&quot;Hilarious Zoo/src/Cat.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hilarious Zoo/src/Cat.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditorNoSource&quot; name=&quot;Runnable.class&quot; tooltip=&quot;java.lang.Runnable&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=Gui Test/C:\/Program Files\/Java\/jre1.8.0_65\/lib\/rt.jar&amp;lt;java.lang(Runnable.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;Test.java&quot; tooltip=&quot;Gui Test/src/Test.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Gui Test/src/Test.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>ModelMigrationProcessor.001</tags>
-  <tags>activeSchemeId:org.eclipse.cdt.ui.visualstudio</tags>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+  <tags>activeSchemeId:org.eclipse.cdt.ui.visualstudio</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_gQo18YAFEeWrD9CM3Y_fdQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_gQo18oAFEeWrD9CM3Y_fdQ" label="%trimmedwindow.label.eclipseSDK" x="136" y="-17" width="974" height="1092">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
@@ -235,7 +235,7 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_gQpdBIAFEeWrD9CM3Y_fdQ" elementId="org.eclipse.ui.editorss" selectedElement="_gQpdBYAFEeWrD9CM3Y_fdQ">
-      <children xsi:type="basic:PartStack" xmi:id="_gQpdBYAFEeWrD9CM3Y_fdQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_3LLQsIU3EeWOHaBlgwpIcg">
+      <children xsi:type="basic:PartStack" xmi:id="_gQpdBYAFEeWrD9CM3Y_fdQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_TYRE4ISxEeWIDpXvB-2wmA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
@@ -244,6 +244,8 @@
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_TmhjUISxEeWIDpXvB-2wmA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Elephant.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Elephant.java&quot; partName=&quot;Elephant.java&quot; title=&quot;Elephant.java&quot; tooltip=&quot;Hilarious Zoo IPA/src/Elephant.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Hilarious Zoo IPA/src/Elephant.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;264&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -258,12 +260,10 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_3LLQsIU3EeWOHaBlgwpIcg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Narrator.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Narrator.java&quot; partName=&quot;Narrator.java&quot; title=&quot;Narrator.java&quot; tooltip=&quot;Hilarious Zoo IPA/src/Narrator.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Hilarious Zoo IPA/src/Narrator.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3735&quot; selectionTopPixel=&quot;1200&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Narrator.java&quot; partName=&quot;Narrator.java&quot; title=&quot;Narrator.java&quot; tooltip=&quot;Hilarious Zoo IPA/src/Narrator.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Hilarious Zoo IPA/src/Narrator.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;1455&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_nw0K8IV4EeWB_I-JA-3Nig" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ElementsLibrary.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ElementsLibrary.java&quot; partName=&quot;ElementsLibrary.java&quot; title=&quot;ElementsLibrary.java&quot; tooltip=&quot;Hilarious Zoo IPA/src/ElementsLibrary.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Hilarious Zoo IPA/src/ElementsLibrary.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1537&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -549,7 +549,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gQpeB4AFEeWrD9CM3Y_fdQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_rvj5cIVtEeWB_I-JA-3Nig" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_gQsgrYAFEeWrD9CM3Y_fdQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_7kWl4IWDEeWZUpNPndkj_A" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_gQsgrYAFEeWrD9CM3Y_fdQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gQpeSIAFEeWrD9CM3Y_fdQ" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
         <tags>Draggable</tags>
@@ -569,7 +569,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gQpeYYAFEeWrD9CM3Y_fdQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_rvr1QIVtEeWB_I-JA-3Nig" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_gQr73IAFEeWrD9CM3Y_fdQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_7ka3UIWDEeWZUpNPndkj_A" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_gQr73IAFEeWrD9CM3Y_fdQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gQpebIAFEeWrD9CM3Y_fdQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -870,7 +870,9 @@
     <bindings xmi:id="_WRtGQYSoEeWIDpXvB-2wmA" keySequence="CTRL+F5" command="_gQsg3oAFEeWrD9CM3Y_fdQ">
       <tags>schemeId:org.eclipse.cdt.ui.visualstudio</tags>
     </bindings>
-    <bindings xmi:id="_WRttUISoEeWIDpXvB-2wmA" keySequence="F9" command="_gQtH_YAFEeWrD9CM3Y_fdQ"/>
+    <bindings xmi:id="_WRttUISoEeWIDpXvB-2wmA" keySequence="F9" command="_gQtH_YAFEeWrD9CM3Y_fdQ">
+      <tags>deleted</tags>
+    </bindings>
     <bindings xmi:id="_WRttUYSoEeWIDpXvB-2wmA" keySequence="F9" command="_gQr7WIAFEeWrD9CM3Y_fdQ">
       <tags>schemeId:org.eclipse.cdt.ui.visualstudio</tags>
     </bindings>

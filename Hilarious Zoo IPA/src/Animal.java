@@ -9,7 +9,13 @@ public class Animal
 	private float weight;
 	private float height;
 	private ArrayList<String> preys;
-
+	private int minAge = 0;
+	private int maxAge = 0;
+	private float minWeight = 0;
+	private float maxWeight = 0;
+	private float minHeight = 0;
+	private float maxHeight = 0;
+	
 	Animal(String inpName, String inpGender, int inpAge, float inpWeight, float inpHeight)
 	{
 		this.name = inpName;
@@ -89,6 +95,54 @@ public class Animal
 
 	public void setPreys(ArrayList<String> preys) {
 		this.preys = preys;
+	}
+
+	public int getMinAge() {
+		return minAge;
+	}
+
+	public void setMinAge(int minAge) {
+		this.minAge = minAge;
+	}
+
+	public int getMaxAge() {
+		return maxAge;
+	}
+
+	public void setMaxAge(int maxAge) {
+		this.maxAge = maxAge;
+	}
+
+	public float getMinWeight() {
+		return minWeight;
+	}
+
+	public void setMinWeight(float minWeight) {
+		this.minWeight = minWeight;
+	}
+
+	public float getMaxWeight() {
+		return maxWeight;
+	}
+
+	public void setMaxWeight(float maxWeight) {
+		this.maxWeight = maxWeight;
+	}
+
+	public float getMinHeight() {
+		return minHeight;
+	}
+
+	public void setMinHeight(float minHeight) {
+		this.minHeight = minHeight;
+	}
+
+	public float getMaxHeight() {
+		return maxHeight;
+	}
+
+	public void setMaxHeight(float maxHeight) {
+		this.maxHeight = maxHeight;
 	}
 	
 	
