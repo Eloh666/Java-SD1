@@ -1,0 +1,27 @@
+public class Animal 
+{
+	protected String name;
+	protected String gender;
+	protected int age;
+	protected float weight;
+	protected float height;
+
+	Animal(String inpName, String inpGender, int inpAge, float inpWeight, float inpHeight)
+	{
+		this.name = inpName;
+		this.gender = inpGender;
+		this.age = inpAge;
+		this.weight = inpWeight;
+		this.height = inpHeight;
+	}
+	
+	Animal()
+	{
+		this("Namless Animal","Male",13,10,0.2f);
+	}
+	
+	String greet()
+	{
+		return "";
+	}
+}

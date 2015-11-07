@@ -1,0 +1,10 @@
+public class Elephant extends Animal
+{
+	@Override
+	String greet()
+	{
+		return "Baraaag Baraaag";
+	}
+	
+	super.type = "Elephant";
+}

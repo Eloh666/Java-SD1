@@ -1,0 +1,23 @@
+public class Elephant extends Animal
+{
+	@Override
+	String greet()
+	{
+		return "Baraaag Baraaag";
+	}
+	
+	Elephant(String inpName, String inpGender, int inpAge, float inpWeight, float inpHeight)
+	{
+		super.type = "Elephant";
+		super.name = inpName;
+		super.gender = inpGender;
+		super.age = inpAge;
+		super.weight = inpWeight;
+		super.height = inpHeight;
+	}
+	
+	Elephant()
+	{
+		this("Namless Elephant","Male",25,6500,4);
+	}
+}

@@ -1,0 +1,36 @@
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+public class Narrator {
+
+	public static void main(String[] args) {
+			int mode = -1;
+			mode = selectMode();
+			System.out.println(mode);
+			
+			/*if(questionDialog == 0)
+				userSelected(2);
+			else if(questionDialog == 2)
+				userSelected(1);
+			else
+				randomSelect();*/
+		}
+	
+	public static int selectMode()
+	{
+		JFrame frame = new JFrame();
+		Object[] options = {"Yes, please",
+                "No, let's random!","I'd rather learn more about..."};
+		int questionDialog = JOptionPane.showOptionDialog(frame,
+				"Do you want to cho*se the Animal names?",
+						"Modality Selection",
+						JOptionPane.YES_NO_CANCEL_OPTION,
+						JOptionPane.QUESTION_MESSAGE,
+						null,
+						options,
+						options[1]);
+		return questionDialog;
+	}
+
+}
+
