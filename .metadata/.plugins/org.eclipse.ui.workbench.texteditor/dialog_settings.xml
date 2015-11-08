@@ -2,30 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="userS" key="selection"/>
+		<item value="biggest" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="users"/>
-			<item value="ele"/>
-			<item value="random"/>
-			<item value="instance"/>
-			<item value="instance of"/>
-			<item value="randomM"/>
-			<item value="random select"/>
-			<item value="Elephant"/>
+			<item value="eldest"/>
+			<item value="Eldest"/>
+			<item value="Male"/>
+			<item value="Height"/>
+			<item value="regent"/>
+			<item value="Weight"/>
+			<item value="float"/>
+			<item value="Age"/>
 		</list>
 		<list key="replacehistory">
+			<item value="biggest"/>
+			<item value="Largest"/>
+			<item value="Female"/>
+			<item value="Weight"/>
+			<item value="Speed"/>
+			<item value="Height"/>
+			<item value="int"/>
 			<item value="Tiger"/>
-			<item value="long"/>
-			<item value=""/>
-			<item value="count"/>
-			<item value="story"/>
-			<item value="Duck"/>
-			<item value="Cat"/>
-			<item value="Dog"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

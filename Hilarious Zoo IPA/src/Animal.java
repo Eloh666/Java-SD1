@@ -11,11 +11,15 @@ public class Animal
 	private ArrayList<String> preys;
 	private int minAge = 0;
 	private int maxAge = 0;
-	private float minWeight = 0;
-	private float maxWeight = 0;
-	private float minHeight = 0;
-	private float maxHeight = 0;
-	
+	private int minWeight = 0;
+	private int maxWeight = 0;
+	private int minHeight = 0;
+	private int maxHeight = 0;
+	private int minSpeed = 0;
+	private int maxSpeed = 0;
+	private float moveSpeed = 0;
+	private String packLeaderIdentifier = "None";
+
 	Animal(String inpName, String inpGender, int inpAge, float inpWeight, float inpHeight)
 	{
 		this.name = inpName;
@@ -117,32 +121,64 @@ public class Animal
 		return minWeight;
 	}
 
-	public void setMinWeight(float minWeight) {
+	public void setMinWeight(int minWeight) {
 		this.minWeight = minWeight;
 	}
 
-	public float getMaxWeight() {
+	public int getMaxWeight() {
 		return maxWeight;
 	}
 
-	public void setMaxWeight(float maxWeight) {
+	public void setMaxWeight(int maxWeight) {
 		this.maxWeight = maxWeight;
 	}
 
-	public float getMinHeight() {
+	public int getMinHeight() {
 		return minHeight;
 	}
 
-	public void setMinHeight(float minHeight) {
+	public void setMinHeight(int minHeight) {
 		this.minHeight = minHeight;
 	}
 
-	public float getMaxHeight() {
+	public int getMaxHeight() {
 		return maxHeight;
 	}
 
-	public void setMaxHeight(float maxHeight) {
+	public void setMaxHeight(int maxHeight) {
 		this.maxHeight = maxHeight;
+	}
+
+	public int getMinSpeed() {
+		return minSpeed;
+	}
+
+	public int getMaxSpeed() {
+		return maxSpeed;
+	}
+
+	public float run() {
+		return moveSpeed;
+	}
+
+	public void setMinSpeed(int minSpeed) {
+		this.minSpeed = minSpeed;
+	}
+
+	public void setMaxSpeed(int maxSpeed) {
+		this.maxSpeed = maxSpeed;
+	}
+
+	public void setMoveSpeed(float moveSpeed) {
+		this.moveSpeed = moveSpeed;
+	}
+	
+	public void setPackLeaderIdentifier(String packLeaderIdentifier) {
+		this.packLeaderIdentifier = packLeaderIdentifier;
+	}
+
+	public String getPackLeaderIdentifier() {
+		return packLeaderIdentifier;
 	}
 	
 	

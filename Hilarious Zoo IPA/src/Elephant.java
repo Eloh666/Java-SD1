@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Elephant extends Animal
 {
 	@Override
@@ -21,6 +23,9 @@ public class Elephant extends Animal
 		super.setMaxWeight(3000);
 		super.setMinHeight(50);
 		super.setMaxHeight(4000);
+		super.setMinSpeed(0);
+		super.setMaxSpeed(4);
+		super.setPackLeaderIdentifier("Eldest Female");
 	}
 	
 	Elephant()
