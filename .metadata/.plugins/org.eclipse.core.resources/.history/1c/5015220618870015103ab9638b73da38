@@ -1,0 +1,9 @@
+import java.util.ArrayList;
+
+public class Year {
+
+	private Integer yearName;
+	private LanguageTab langTab;
+	
+	
+}

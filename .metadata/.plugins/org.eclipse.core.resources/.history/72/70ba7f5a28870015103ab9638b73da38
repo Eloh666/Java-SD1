@@ -1,0 +1,61 @@
+import java.util.ArrayList;
+
+public class LanguagesTab {
+	
+	private ArrayList<Integer> langTab;
+	
+	public LanguagesTab(ArrayList<Integer> langTab)
+	{
+		this.langTab = new ArrayList<Integer>;
+	}
+	
+	public ArrayList<Integer> getLangTab() {
+		return langTab;
+	}
+
+	public void setLangTab(ArrayList<Integer> langTab) {
+		this.langTab = langTab;
+	}
+	
+	public Integer getJava()
+	{
+		if(langTab.get(0) != null)
+			return langTab.get(0);
+		else
+			return -1;
+	}
+	
+	public Integer getCpp()
+	{
+		if(langTab.get(0) != null)
+			return langTab.get(0);
+		else
+			return -1;
+	}
+	
+	public Integer getCs()
+	{
+		if(langTab.get(0) != null)
+			return langTab.get(0);
+		else
+			return -1;
+	}
+	
+	public Integer getPy()
+	{
+		if(langTab.get(0) != null)
+			return langTab.get(0);
+		else
+			return -1;
+	}
+	
+	public Integer getJs()
+	{
+		if(langTab.get(0) != null)
+			return langTab.get(0);
+		else
+			return -1;
+	}
+	
+
+}

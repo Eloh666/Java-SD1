@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+public class Year {
+	
+	private Integer yearValue;
+	private ArrayList<Country> countries;
+	
+	public Year(Integer yearValue)
+	{
+		this.yearValue = yearValue;
+		this.countries = new ArrayList<Country>();
+	}
+
+	public Integer getYearValue() {
+		return yearValue;
+	}
+
+	public void setYearValue(Integer yearValue) {
+		this.yearValue = yearValue;
+	}
+
+	public ArrayList<Country> getCountries() {
+		return countries;
+	}
+
+	public void setCountries(ArrayList<Country> countries) {
+		this.countries = countries;
+	}
+
+}

@@ -1,0 +1,20 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+public class Parser {
+
+	public static void main(String[] args) throws Exception {
+		
+		ArrayList<Week> weeks = new ArrayList<Week>();
+		BufferedReader fh = new BufferedReader(new FileReader("iot.txt"));
+		String reader = fh.readLine();
+		while((reader = fh.readLine())!=null)
+		{
+			System.out.println(reader);
+		}
+
+	}
+
+}
+

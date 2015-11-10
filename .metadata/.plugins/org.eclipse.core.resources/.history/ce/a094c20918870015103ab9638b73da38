@@ -1,0 +1,4 @@
+public class LanguageTab {
+
+	private Integer java;
+}

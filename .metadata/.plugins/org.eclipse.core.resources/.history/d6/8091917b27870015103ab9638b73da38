@@ -1,0 +1,12 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class Parser {
+
+	public void main() throws Exception
+	{
+		BufferedReader fh = new BufferedReader(new FileReader("iot.txt"));
+				
+	}
+	
+}

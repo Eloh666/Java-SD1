@@ -1,0 +1,31 @@
+
+public class Country {
+	
+	private String countryName;
+	private LanguagesTab langTab;
+	
+	public Country(String countryName, String lineSplit[])
+	{
+		this.countryName = countryName;
+		this.langTab = new LanguagesTab();
+		for(Integer i = 1; i < 6; i++)
+			langTab.getLangTab().add(Integer.parseInt(lineSplit[i]));
+	}
+
+	public String getCountryName() {
+		return countryName;
+	}
+
+	public void setCountryName(String countryName) {
+		this.countryName = countryName;
+	}
+
+	public LanguagesTab getLangTab() {
+		return langTab;
+	}
+
+	public void setLangTab(LanguagesTab langTab) {
+		this.langTab = langTab;
+	}
+
+}
