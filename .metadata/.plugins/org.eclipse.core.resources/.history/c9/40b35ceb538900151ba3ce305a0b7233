@@ -15,8 +15,6 @@ public class Parser {
 		
 		System.out.println(weeksTab.get(1));
 		System.out.println(yearsTab.get(2004).findCountry("Italy"));
-		
-		question12(weeksTab);
 	}
 	
 	// Question 12 by weeks
@@ -24,29 +22,25 @@ public class Parser {
 	{
 		Integer secondIndex = 0;
 		Integer interestLoss = 0;
-		Week startWeek = null;
-		Week endWeek = null;
-		Integer language = -1;
+		Integer tmp;
+		Week startWeek;
+		Week endWeek;
+		Integer language;
 		for(Integer firstIndex = 51; firstIndex < weeks.size(); firstIndex++)
 		{
 			for(Integer i = 0; i < weeks.get(firstIndex).getLangTab().getlanguagesList().size(); i++)
 			{
-				if(interestLoss < weeks.get(secondIndex).getLangTab().getlanguagesList().get(i) -
-						   weeks.get(firstIndex).getLangTab().getlanguagesList().get(i))
+				tmp = weeks.get(firstIndex).getLangTab().getlanguagesList().get(i) -
+					   weeks.get(firstIndex).getLangTab().getlanguagesList().get(i);
+				if(interestLoss < tmp)
 				{
-					interestLoss = weeks.get(secondIndex).getLangTab().getlanguagesList().get(i) -
-							   weeks.get(firstIndex).getLangTab().getlanguagesList().get(i);
+					interestLoss = tmp;
 					startWeek = weeks.get(firstIndex);
 					endWeek = weeks.get(secondIndex);
 					language = i;
 				}
 			}
-			secondIndex++;
 		}
-		System.out.println("Highest Interest Drop: "+startWeek.getLangTab().langFromNumber(language));
-		System.out.println("The delta between the start and the end of the timespan is "+interestLoss);
-		System.out.println(startWeek);
-		System.out.println(endWeek);
 		return null;
 	}
 	

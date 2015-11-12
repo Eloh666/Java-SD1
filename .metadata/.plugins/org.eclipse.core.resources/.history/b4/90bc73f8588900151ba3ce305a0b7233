@@ -80,7 +80,7 @@ public class LanguagesTab {
 			name = "Python";
 		if (value == 4)
 			name = "JavaScript";
-		return name +"  "+ languagesList.get(value);
+		return name + languagesList.get(value);
 	}
 	
 

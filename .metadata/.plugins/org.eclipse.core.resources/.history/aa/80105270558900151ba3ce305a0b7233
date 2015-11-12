@@ -67,21 +67,5 @@ public class LanguagesTab {
 		return temp;
 	}
 	
-	public String langFromNumber(int value)
-	{
-		String name = new String();
-		if (value == 0)
-			name = "Java";
-		if (value == 1)
-			name = "C++";
-		if (value == 2)
-			name = "C#";
-		if (value == 3)
-			name = "Python";
-		if (value == 4)
-			name = "JavaScript";
-		return name +"  "+ languagesList.get(value);
-	}
-	
 
 }

@@ -44,7 +44,6 @@ public class Parser {
 			secondIndex++;
 		}
 		System.out.println("Highest Interest Drop: "+startWeek.getLangTab().langFromNumber(language));
-		System.out.println("The delta between the start and the end of the timespan is "+interestLoss);
 		System.out.println(startWeek);
 		System.out.println(endWeek);
 		return null;

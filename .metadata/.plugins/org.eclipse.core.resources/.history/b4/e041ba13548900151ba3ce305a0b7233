@@ -24,6 +24,7 @@ public class Parser {
 	{
 		Integer secondIndex = 0;
 		Integer interestLoss = 0;
+		Integer tmp;
 		Week startWeek = null;
 		Week endWeek = null;
 		Integer language = -1;
@@ -31,11 +32,11 @@ public class Parser {
 		{
 			for(Integer i = 0; i < weeks.get(firstIndex).getLangTab().getlanguagesList().size(); i++)
 			{
-				if(interestLoss < weeks.get(secondIndex).getLangTab().getlanguagesList().get(i) -
-						   weeks.get(firstIndex).getLangTab().getlanguagesList().get(i))
+				tmp = weeks.get(firstIndex).getLangTab().getlanguagesList().get(i) -
+					   weeks.get(firstIndex).getLangTab().getlanguagesList().get(i);
+				if(interestLoss < tmp)
 				{
-					interestLoss = weeks.get(secondIndex).getLangTab().getlanguagesList().get(i) -
-							   weeks.get(firstIndex).getLangTab().getlanguagesList().get(i);
+					interestLoss = tmp;
 					startWeek = weeks.get(firstIndex);
 					endWeek = weeks.get(secondIndex);
 					language = i;
@@ -43,8 +44,7 @@ public class Parser {
 			}
 			secondIndex++;
 		}
-		System.out.println("Highest Interest Drop: "+startWeek.getLangTab().langFromNumber(language));
-		System.out.println("The delta between the start and the end of the timespan is "+interestLoss);
+		System.out.println("Highest Interest Drop: "+interestLoss);
 		System.out.println(startWeek);
 		System.out.println(endWeek);
 		return null;

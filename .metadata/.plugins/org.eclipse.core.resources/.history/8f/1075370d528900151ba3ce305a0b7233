@@ -61,62 +61,6 @@ public class Week {
 			   +"	"+langTab.getPy()
 			   +"	"+langTab.getJs();
 	}
-
-	public Integer getStartingYear() {
-		return startingYear;
-	}
-
-	public void setStartingYear(Integer startingYear) {
-		this.startingYear = startingYear;
-	}
-
-	public Integer getEndingYear() {
-		return endingYear;
-	}
-
-	public void setEndingYear(Integer endingYear) {
-		this.endingYear = endingYear;
-	}
-
-	public Integer getStartingMonth() {
-		return startingMonth;
-	}
-
-	public void setStartingMonth(Integer startingMonth) {
-		this.startingMonth = startingMonth;
-	}
-
-	public Integer getEndingMonth() {
-		return endingMonth;
-	}
-
-	public void setEndingMonth(Integer endingMonth) {
-		this.endingMonth = endingMonth;
-	}
-
-	public Integer getStartingDay() {
-		return startingDay;
-	}
-
-	public void setStartingDay(Integer startingDay) {
-		this.startingDay = startingDay;
-	}
-
-	public Integer getEndingDay() {
-		return endingDay;
-	}
-
-	public void setEndingDay(Integer endingDay) {
-		this.endingDay = endingDay;
-	}
-
-	public LanguagesTab getLangTab() {
-		return langTab;
-	}
-
-	public void setLangTab(LanguagesTab langTab) {
-		this.langTab = langTab;
-	}
 		
 
 }
