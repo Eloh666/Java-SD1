@@ -1,0 +1,139 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.TreeMap;
+
+import org.omg.Messaging.SyncScopeHelper;
+
+public class Parser {
+
+	public static void main(String[] args) throws Exception  {
+		
+		ArrayList<Week> weeksTab = new ArrayList<Week>();
+		TreeMap<Integer,Year> yearsTab = new TreeMap<Integer,Year>();
+		
+		weeksTab = parseWeeks(weeksTab);
+		yearsTab = parseYears(yearsTab);
+
+		System.out.println(question12b(weeksTab));
+	}
+	
+	// Question 12 hardmode
+	public static String question12b(ArrayList<Week> weeks)
+	{
+		TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>> auxStructure = new TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>>();
+		TreeMap<Integer,AuxMonthsBinder> temporaryBinder;
+		for(Integer i = 2004; i<2016 ;i++)
+		{
+			temporaryBinder = new TreeMap<Integer,AuxMonthsBinder>();
+			for(Integer j = 1; j<12 ;j++)
+			{
+				temporaryBinder.put(j, new AuxMonthsBinder());
+			}
+			auxStructure.put(i, temporaryBinder);
+		}
+		System.out.println(auxStructure.get(2004).get(1).getValue());
+		
+		for(Week curWeek : weeks)
+		{
+			if(curWeek.getStartingMonth() == curWeek.getEndingMonth())
+			{
+				Integer temp[] = new Integer[5];
+				for(Integer i = 0; i<5; i++)
+				{
+					System.out.println(temp[i]);
+					System.out.println(curWeek.getLangTab().getlanguagesList().get(i));
+					//temp[i] += curWeek.getLangTab().getlanguagesList().get(i);
+					//auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).addWeeks(1);
+				}
+				//auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).SetValue()
+			}
+			
+			/*else
+			{
+				Integer temp[] = auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).getValue();
+				
+				for(Integer i = 0; i<5; i++)
+				{
+					temp[i] += curWeek.getLangTab().getlanguagesList().get(i);
+					auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).setWeeks(
+					auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).getWeeks()+0.5f);
+				}
+				
+				Integer temp2[] = auxStructure.get(curWeek.getEndingYear()).get(curWeek.getEndingMonth()).getValue();
+				for(Integer i = 0; i<5; i++)
+				{
+					temp2[i] += curWeek.getLangTab().getlanguagesList().get(i);
+					auxStructure.get(curWeek.getEndingYear()).get(curWeek.getEndingMonth()).setWeeks(
+					auxStructure.get(curWeek.getEndingYear()).get(curWeek.getEndingMonth()).getWeeks()+0.5f);
+				}
+			}*/
+		}
+		System.out.println(auxStructure.get(2013).get(8).getWeeks());
+		return null;
+	}
+	
+	// Question 12 by weeks
+	public static String question12(ArrayList<Week> weeks)
+	{
+		Integer secondIndex = 0;
+		Integer interestLoss = 0;
+		Week startWeek = null;
+		Week endWeek = null;
+		Integer language = -1;
+		for(Integer firstIndex = 51; firstIndex < weeks.size(); firstIndex++)
+		{
+			for(Integer i = 0; i < weeks.get(firstIndex).getLangTab().getlanguagesList().size(); i++)
+			{
+				if(interestLoss < weeks.get(secondIndex).getLangTab().getlanguagesList().get(i) -
+						   weeks.get(firstIndex).getLangTab().getlanguagesList().get(i))
+				{
+					interestLoss = weeks.get(secondIndex).getLangTab().getlanguagesList().get(i) -
+							   weeks.get(firstIndex).getLangTab().getlanguagesList().get(i);
+					startWeek = weeks.get(firstIndex);
+					endWeek = weeks.get(secondIndex);
+					language = i;
+				}
+			}
+			secondIndex++;
+		}
+		return "Highest Interest Drop: "+startWeek.getLangTab().langFromNumber(language)
+				+ "\nThe delta between the start and the end of the timespan is "
+				+ interestLoss + "\nWeek 1: " + endWeek + "\nWeek 2: " + startWeek;
+	}
+	
+	
+	//Parses the iot.txt file and returns a the values into the weeks variableTab
+	public static ArrayList<Week> parseWeeks(ArrayList<Week> weeks) throws Exception
+	{
+		BufferedReader fh = new BufferedReader(new FileReader("iot.txt"));
+		// Get rid of the first line
+		String reader = fh.readLine();
+		while((reader = fh.readLine())!= null)
+		{
+			weeks.add(new Week(reader));
+		}
+		fh.close();
+		return weeks;
+	}
+	
+	// parses the files from 2004 to 2015 and returns he structure into yearsTab
+	public static TreeMap<Integer,Year> parseYears(TreeMap<Integer,Year> years) throws Exception	
+	{
+		for(Integer i = 2004; i < 2016;i++)
+		{
+			BufferedReader fh = new BufferedReader(new FileReader(i+".txt"));
+			// Get rid of the first line
+			String yearsReader = fh.readLine();
+			years.put(i,new Year(i));
+			while((yearsReader = fh.readLine()) != null)
+			{
+				years.get(i).addCountry(yearsReader);
+			}			
+			fh.close();
+		}
+		return years;
+	}
+
+}
+

@@ -41,20 +41,34 @@ public class Week {
 		}
 		
 		// runs on O(N), linear in N where N is the amount of characters of a line (worst case)
-		 // if they were to be all tabs or dashes, in the real data there are only around 10 iteration per week
+		// if they were to be all tabs or dashes, in the real data there are only around 10 iteration per week
 		
 		this.startingYear = Integer.parseInt(dashSplit[0]);
-		this.endingYear = Integer.parseInt(dashSplit[1]);
-		this.startingMonth = Integer.parseInt(dashSplit[2]);
-		this.endingMonth = Integer.parseInt(dashSplit[3]);
-		this.startingDay = Integer.parseInt(dashSplit[4]);
+		this.endingYear = Integer.parseInt(dashSplit[3]);
+		this.startingMonth = Integer.parseInt(dashSplit[1]);
+		this.endingMonth = Integer.parseInt(dashSplit[4]);
+		this.startingDay = Integer.parseInt(dashSplit[2]);
 		this.endingDay = Integer.parseInt(dashSplit[5]);
 	}
 	
-	public String toString()
-	{
-		return startingYear+"-"+startingMonth+"-"+startingDay
-			   + " - "+endingYear+"-"+endingMonth+"-"+endingDay  //TODO fix spacing
+	public String toString()         // not really great, but at least it returns the text 
+	{								// in even columns as it was provided
+		String startMon = this.startingMonth.toString();
+		String startDay = this.startingDay.toString();
+		String endMon = this.endingMonth.toString();
+		String endDay = this.endingDay.toString();
+		
+		if(this.startingMonth < 10)
+			startMon = "0"+startMon;
+		if(this.endingMonth < 10)
+			endMon = "0"+endMon;
+		if(this.endingDay < 10)
+			endDay = "0"+endDay;
+		if(this.startingDay < 10)
+			startDay = "0"+startDay;
+			
+		return this.startingYear+"-"+startMon+"-"+startDay
+			   + " - "+this.endingYear+"-"+endMon+"-"+endDay  //TODO fix spacing
 			   + "	"+langTab.getJava()
 			   +"	"+langTab.getCpp()
 			   +"	"+langTab.getCs()

@@ -1,0 +1,42 @@
+
+public class AuxMonthsBinder {
+
+	private Integer year;
+	private Integer name;
+	private Integer values;
+	private Integer weeks;
+	
+	public AuxMonthsBinder(Integer year, Integer name, Integer values, Integer weeks) {
+		super();
+		this.year = year;
+		this.name = name;
+		this.values = values;
+		this.weeks = weeks;
+	}
+	
+	
+	public Integer getYear() {
+		return year;
+	}
+	public void setYear(Integer year) {
+		this.year = year;
+	}
+	public Integer getName() {
+		return name;
+	}
+	public void setName(Integer name) {
+		this.name = name;
+	}
+	public Integer getValue() {
+		return values;
+	}
+	public void setValue(Integer value) {
+		this.values = value;
+	}
+	public Integer getWeeks() {
+		return weeks;
+	}
+	public void setWeeks(Integer weeks) {
+		this.weeks = weeks;
+	}
+}
