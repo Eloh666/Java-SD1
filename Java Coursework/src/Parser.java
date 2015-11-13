@@ -34,7 +34,7 @@ public class Parser {
 			auxStructure.put(i, temporaryBinder);
 		}
 		
-		for(Week curWeek : weeks)
+		for(Week curWeek : weeks)                     // TODO better weeks
 		{
 			if(curWeek.getStartingMonth() == curWeek.getEndingMonth())
 			{
@@ -74,7 +74,7 @@ public class Parser {
 			{
 				if(auxStructure.get(i).get(j).getWeeks() != 0)
 				{
-					System.out.println(i+"   "+j);
+					System.out.println(auxStructure.get(i).get(j).getWeeks());
 					auxArray.add(auxStructure.get(i).get(j).getAverage());
 				}
 					
@@ -87,8 +87,6 @@ public class Parser {
 		{
 			//TODO from 0 to 12 etc
 		}
-		
-		System.out.println(auxArray.size());
 		
 		
 		
