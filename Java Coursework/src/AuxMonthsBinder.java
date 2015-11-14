@@ -2,17 +2,17 @@ import java.util.ArrayList;
 
 public class AuxMonthsBinder {
 
-	ArrayList<Integer> values;
+	ArrayList<Float> values;
 	private Float weeksCount = 0f;
 	
 	public AuxMonthsBinder() {
-		this.values = new ArrayList<Integer>();
+		this.values = new ArrayList<Float>();
 	}
 
-	public ArrayList<Integer> getValue() {
+	public ArrayList<Float> getValue() {
 		return values;
 	}
-	public void setValue(ArrayList<Integer> values) {
+	public void setValue(ArrayList<Float> values) {
 		this.values = values;
 	}			
 	
@@ -32,15 +32,16 @@ public class AuxMonthsBinder {
 		for(Integer i =0; i<this.values.size()-5;i+=5)
 		{
 			acc[0] +=values.get(i);
-			acc[0] +=values.get(i+1) ;
-			acc[0] +=values.get(i+1) ;
-			acc[0] +=values.get(i+2) ;
-			acc[0] +=values.get(i+3) ;
+			acc[1] +=values.get(i+1) ;
+			acc[2] +=values.get(i+2) ;
+			acc[3] +=values.get(i+3) ;
+			acc[4] +=values.get(i+4) ;
 		}
 		
-		for (Float f:acc)
+		for (Integer i =0; i< 5; i++)
 		{
-			f = f/this.weeksCount;
+			if(this.weeksCount != 0)
+				acc[i] = acc[i]/this.weeksCount;
 		}
 		return acc;
 	}
