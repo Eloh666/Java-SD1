@@ -2,70 +2,30 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.TreeMap;
 
-import org.omg.Messaging.SyncScopeHelper;
 
 public class Parser {
 
 	public static void main(String[] args) throws Exception  {
-		
+		Integer startYear = 2004;
+		Integer endingYear = 2015;
 		ArrayList<Week> weeksTab = new ArrayList<Week>();
 		TreeMap<Integer,Year> yearsTab = new TreeMap<Integer,Year>();
 		
 		weeksTab = parseWeeks(weeksTab);
-		yearsTab = parseYears(yearsTab);
+		yearsTab = parseYears(yearsTab,startYear,endingYear);
 
-		System.out.println(question12b(weeksTab));
+		//System.out.println(question12(weeksTab,startYear,endingYear));
+		//System.out.println(question13(weeksTab,startYear,endingYear));
+		//System.out.println(question15(weeksTab));
 	}
 	
-	// Question 12 hardmode
-	public static String question12b(ArrayList<Week> weeks)
+	// Question 12 hard mode version
+	public static String question12(ArrayList<Week> weeks,Integer sY, Integer eY)
 	{
-		TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>> auxStructure = new TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>>();
-		TreeMap<Integer,AuxMonthsBinder> temporaryBinder;
-		for(Integer i = 2004; i<2016 ;i++)
-		{
-			temporaryBinder = new TreeMap<Integer,AuxMonthsBinder>();
-			for(Integer j = 1; j<=12 ;j++)
-			{
-				temporaryBinder.put(j, new AuxMonthsBinder());
-			}
-			auxStructure.put(i, temporaryBinder);
-		}
-		
-		for(Week curWeek : weeks)                     // TODO better weeks
-		{
-			if(curWeek.getStartingMonth() == curWeek.getEndingMonth())
-			{
-				Float temp[] = {0f,0f,0f,0f,0f};
-				for(Integer i = 0; i<5; i++)
-				{
-					temp[i] += (float) curWeek.getLangTab().getlanguagesList().get(i)*7;
-				}
-				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).addWeeks(7);
-				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).getValue().addAll(Arrays.asList(temp));
-			}
-			
-			else
-			{
-				Float temp[] = {0f,0f,0f,0f,0f};
-				for(Integer i = 0; i<5; i++)
-				{
-					temp[i] += ((float) curWeek.getLangTab().getlanguagesList().get(i))*(7-curWeek.getEndingDay());
-				}
-				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).addWeeks(7-curWeek.getEndingDay());
-				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).getValue().addAll(Arrays.asList(temp));
-				
-				Float temp2[] = {0f,0f,0f,0f,0f};
-				for(Integer i = 0; i<5; i++)
-				{
-					temp2[i] += ((float) curWeek.getLangTab().getlanguagesList().get(i))*curWeek.getEndingDay();
-				}
-				auxStructure.get(curWeek.getEndingYear()).get(curWeek.getEndingMonth()).addWeeks(curWeek.getEndingDay());
-				auxStructure.get(curWeek.getEndingYear()).get(curWeek.getEndingMonth()).getValue().addAll(Arrays.asList(temp2));
-			}
-		}
+		TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>> auxStructure = transformWeeks(weeks,sY,eY);
 		
 		Integer langIdent = -1;
 		Float biggestDrop = 0f;
@@ -75,10 +35,12 @@ public class Parser {
 		Float[] valuesNext = new Float[5];
 		Float currentValue = 0f;
 		Float nextValue = 0f;
-		for(Integer i = 2004; i <= 2014; i++)
+		for(Integer i = sY; i < eY; i++)
 		{
 			for(Integer j = 1; j <= 12; j++)
 			{
+				if((i == 2004 && j == 1) || (i == 2015 && j == 8))   // skip month if data set != complete
+					j++;
 				if(auxStructure.get(i+1).get(j).getWeeks() != 0f)
 				{
 					valuesCur = auxStructure.get(i).get(j).getAverage();
@@ -99,41 +61,196 @@ public class Parser {
 					
 			}
 		}		
-		return "The biggest drop happened for "+langIdent+" between "
-						+ dropYear+" and "+(dropYear+1)+" during "+dropMonth +
+		return "The biggest drop happened for "+decodeLanguage(langIdent)+"\n between "
+						+ dropYear+" and "+(dropYear+1)+" during "+ decodeMonth(dropMonth)+"." +
 				"\nThe drop in usage was "+biggestDrop+". \nThe average "
-						+ "monthly usage went down from "+currentValue+" to "+nextValue;
+						+ "monthly usage went down from "+currentValue+" to "+nextValue+".";
 	}
-	
-	// Question 12 by weeks
-	public static String question12(ArrayList<Week> weeks)
+
+	// Question 13
+	public static String question13(ArrayList<Week> weeks, Integer sY, Integer eY)
 	{
-		Integer secondIndex = 0;
-		Integer interestLoss = 0;
-		Week startWeek = null;
-		Week endWeek = null;
-		Integer language = -1;
-		for(Integer firstIndex = 51; firstIndex < weeks.size(); firstIndex++)
+		TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>> auxStructure = transformWeeks(weeks,sY,eY);
+		String answer = new String();
+		
+		
+		for(Integer i = sY; i < eY ; i++)
 		{
-			for(Integer i = 0; i < weeks.get(firstIndex).getLangTab().getlanguagesList().size(); i++)
+			Float averageAcYear = 0f;
+			Float averageSeptOct = 0f;
+			Integer counterAcYear = 0;
+			
+			averageSeptOct =(auxStructure.get(i).get(9).getValueForLanguage(0)
+							+ auxStructure.get(i).get(10).getValueForLanguage(0))/61;
+			
+			for(Integer j = 1; j < 12; j++)
 			{
-				if(interestLoss < weeks.get(secondIndex).getLangTab().getlanguagesList().get(i) -
-						   weeks.get(firstIndex).getLangTab().getlanguagesList().get(i))
+				if(j >= 9)
 				{
-					interestLoss = weeks.get(secondIndex).getLangTab().getlanguagesList().get(i) -
-							   weeks.get(firstIndex).getLangTab().getlanguagesList().get(i);
-					startWeek = weeks.get(firstIndex);
-					endWeek = weeks.get(secondIndex);
-					language = i;
+					averageAcYear += auxStructure.get(i).get(j).getValueForLanguage(0);
+					counterAcYear += auxStructure.get(i).get(j).getWeeks();
+				}
+				
+				if(auxStructure.get(i).get(j).getWeeks() != 0)
+				{
+					if(j <= 8)
+					{
+						averageAcYear += auxStructure.get(i+1).get(j).getValueForLanguage(0);
+						counterAcYear += auxStructure.get(i).get(j).getWeeks();
+					}
 				}
 			}
-			secondIndex++;
+			answer += i+"/"+(i+1);
+			answer += "    "+averageSeptOct;
+			answer += "    "+averageAcYear/counterAcYear;
+			answer += "    "+(averageSeptOct - averageAcYear/counterAcYear)+"\n";
 		}
-		return "Highest Interest Drop: "+startWeek.getLangTab().langFromNumber(language)
-				+ "\nThe delta between the start and the end of the timespan is "
-				+ interestLoss + "\nWeek 1: " + endWeek + "\nWeek 2: " + startWeek;
+
+		return answer;
 	}
 	
+	// Question 15
+	public static String question15(ArrayList<Week> weeks)
+	{
+		Integer head[] = {0,0,0,0,0};
+		Integer tail[] = {0,0,0,0,0};
+		Integer tempHead[] = {0,0,0,0,0};
+		Integer tempTail[] = {0,0,0,0,0};
+		Integer value[] = {0,0,0,0,0};
+		Integer tempValue[] = {0,0,0,0,0};
+		String answer = "The deepest decline is found for ";
+		
+		for(Integer i = 1; i< weeks.size(); i++)
+		{
+			for(Integer j = 0; j<5; j++)
+			{
+				if(weeks.get(i-1).getLangTab().getlanguagesList().get(j) >=	weeks.get(i).getLangTab().getlanguagesList().get(j))
+				{
+					tempValue[j] += (weeks.get(i-1).getLangTab().getlanguagesList().get(j) - weeks.get(i).getLangTab().getlanguagesList().get(j));
+					tempTail[j] = i;
+					if(tempValue[j] > value[j])
+					{
+						value[j] = tempValue[j];
+						head[j] = tempHead[j];
+						tail[j] = tempTail[j];
+					}
+				}
+				else
+				{
+					tempHead[j] = i;
+					tempTail[j] = i;
+					tempValue[j] = 0;
+				}
+			}
+		}
+		
+		for(Integer i = 0; i<5; i++)
+		{
+			if(value[i] == Collections.max(Arrays.asList(value)))
+			{
+				answer += decodeLanguage(i)+".\nThe timespam for the decline is the following:\n\n";
+				for(Integer j = head[i]; j<= tail[i]; j++)
+					answer += weeks.get(j).toString()+"\n";
+			}
+		}
+		return answer;
+	}
+	
+	//Creates an auxiliary data structures to easily access months based on the weeks IOT file
+	public static TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>>  transformWeeks(ArrayList<Week> weeks, Integer sY, Integer eY)
+	{
+		TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>> auxStructure = new TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>>();
+		TreeMap<Integer,AuxMonthsBinder> temporaryBinder;
+		for(Integer i = sY; i<= eY ;i++)
+		{
+			temporaryBinder = new TreeMap<Integer,AuxMonthsBinder>();
+			for(Integer j = 1; j<=12 ;j++)
+			{
+				temporaryBinder.put(j, new AuxMonthsBinder());
+			}
+			auxStructure.put(i, temporaryBinder);
+		}
+		
+		for(Week curWeek : weeks)                    
+		{
+			if(curWeek.getStartingMonth() == curWeek.getEndingMonth())
+			{
+				Float temp[] = {0f,0f,0f,0f,0f};
+				for(Integer i = 0; i<5; i++)
+				{
+					temp[i] += (float) curWeek.getLangTab().getlanguagesList().get(i)*7;
+				}
+				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).addDays(7);
+				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).getValue().addAll(Arrays.asList(temp));
+			}
+			
+			else
+			{
+				Float temp[] = {0f,0f,0f,0f,0f};
+				for(Integer i = 0; i<5; i++)
+				{
+					temp[i] += ((float) curWeek.getLangTab().getlanguagesList().get(i))*(7-curWeek.getEndingDay());
+				}
+				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).addDays(7-curWeek.getEndingDay());
+				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).getValue().addAll(Arrays.asList(temp));
+				
+				Float temp2[] = {0f,0f,0f,0f,0f};
+				for(Integer i = 0; i<5; i++)
+				{
+					temp2[i] += ((float) curWeek.getLangTab().getlanguagesList().get(i))*curWeek.getEndingDay();
+				}
+				auxStructure.get(curWeek.getEndingYear()).get(curWeek.getEndingMonth()).addDays(curWeek.getEndingDay());
+				auxStructure.get(curWeek.getEndingYear()).get(curWeek.getEndingMonth()).getValue().addAll(Arrays.asList(temp2));
+			}
+		}
+		return auxStructure;
+	}
+	
+	public static String decodeLanguage(Integer value)
+	{
+		if(value == 0)
+			return "Java";
+		if(value == 1)
+			return "C++";
+		if(value == 2)
+			return "C#";
+		if(value == 3)
+			return "Python";
+		if(value == 4)
+			return "JavaScript";
+		else
+			return "Not found";		
+	}
+	
+	public static String decodeMonth (Integer value)
+	{
+		if(value == 1)
+			return "January";
+		if(value == 2)
+			return "Februrary";
+		if(value == 3)
+			return "March";
+		if(value == 4)
+			return "April";
+		if(value == 5)
+			return "May";
+		if(value == 6)
+			return "June";
+		if(value == 7)
+			return "July";
+		if(value == 8)
+			return "August";
+		if(value == 9)
+			return "September";
+		if(value == 10)
+			return "October";
+		if(value == 11)
+			return "November";
+		if(value == 12)
+			return "December";
+		else
+			return "Not found";		
+	}
 	
 	//Parses the iot.txt file and returns a the values into the weeks variableTab
 	public static ArrayList<Week> parseWeeks(ArrayList<Week> weeks) throws Exception
@@ -150,9 +267,9 @@ public class Parser {
 	}
 	
 	// parses the files from 2004 to 2015 and returns he structure into yearsTab
-	public static TreeMap<Integer,Year> parseYears(TreeMap<Integer,Year> years) throws Exception	
+	public static TreeMap<Integer,Year> parseYears(TreeMap<Integer,Year> years, Integer sY, Integer eY) throws Exception	
 	{
-		for(Integer i = 2004; i < 2016;i++)
+		for(Integer i = sY; i <= eY; i++)
 		{
 			BufferedReader fh = new BufferedReader(new FileReader(i+".txt"));
 			// Get rid of the first line
@@ -166,6 +283,7 @@ public class Parser {
 		}
 		return years;
 	}
-
+	
+	
 }
 

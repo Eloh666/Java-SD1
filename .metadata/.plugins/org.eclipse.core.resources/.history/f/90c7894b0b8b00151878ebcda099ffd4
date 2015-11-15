@@ -1,0 +1,75 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JFormattedTextField;
+
+public class CourseWork2 {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					CourseWork2 window = new CourseWork2();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public CourseWork2() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 852, 698);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JFormattedTextField formattedTextField = new JFormattedTextField();
+		formattedTextField.setBounds(354, 36, 460, 594);
+		frame.getContentPane().add(formattedTextField);
+		
+		JButton button0 = new JButton("Question 11");
+		button0.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				formattedTextField.setText();
+			}
+		});
+		button0.setBounds(23, 36, 298, 51);
+		frame.getContentPane().add(button0);
+		
+		JButton button1 = new JButton("Question 12");
+		button1.setBounds(23, 122, 298, 51);
+		frame.getContentPane().add(button1);
+		
+		
+		JButton button2 = new JButton("Question 13");
+		button2.setBounds(23, 210, 298, 51);
+		frame.getContentPane().add(button2);
+		
+		JButton button4 = new JButton("Question 14");
+		button4.setBounds(23, 296, 298, 51);
+		frame.getContentPane().add(button4);
+		
+		JButton button5 = new JButton("Question 15");
+		button5.setBounds(23, 394, 298, 51);
+		frame.getContentPane().add(button5);
+	}
+}

@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+// Question 12 by weeks
+	public static String question12(ArrayList<Week> weeks)
+	{
+		Integer secondIndex = 0;
+		Integer interestLoss = 0;
+		Week startWeek = null;
+		Week endWeek = null;
+		Integer language = -1;
+		for(Integer firstIndex = 51; firstIndex < weeks.size(); firstIndex++)
+		{
+			for(Integer i = 0; i < weeks.get(firstIndex).getLangTab().getlanguagesList().size(); i++)
+			{
+				if(interestLoss < weeks.get(secondIndex).getLangTab().getlanguagesList().get(i) -
+						   weeks.get(firstIndex).getLangTab().getlanguagesList().get(i))
+				{
+					interestLoss = weeks.get(secondIndex).getLangTab().getlanguagesList().get(i) -
+							   weeks.get(firstIndex).getLangTab().getlanguagesList().get(i);
+					startWeek = weeks.get(firstIndex);
+					endWeek = weeks.get(secondIndex);
+					language = i;
+				}
+			}
+			secondIndex++;
+		}
+		return "Highest Interest Drop: "+startWeek.getLangTab().langFromNumber(language)
+				+ "\nThe delta between the start and the end of the timespan is "
+				+ interestLoss + "\nWeek 1: " + endWeek + "\nWeek 2: " + startWeek;
+	}

@@ -1,0 +1,12 @@
+import java.util.TreeMap;
+
+public class CompTool implements java.util.Comparator<Integer[]> {
+	
+	public int compare(TreeMap<String, Integer[]> listOne,TreeMap<String, Integer[]> listTwo)
+	{
+		Integer one = listOne.get();
+		Integer two = listTwo.get();
+		return -1*one.compareTo(two);
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class CompTool implements java.util.Comparator<Integer[]> {
+	
+	public int compare(Integer listOne[],Integer listTwo[])
+	{
+		private one = listOne[1];
+		private two = lisTwo[1];
+		return -1*one.compareTo(two)
+	}
+
+}

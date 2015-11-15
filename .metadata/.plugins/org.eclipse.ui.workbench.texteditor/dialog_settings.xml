@@ -2,37 +2,37 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Ending" key="selection"/>
+		<item value="consoleCheckBox" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="Starting"/>
-			<item value="startingMonth"/>
-			<item value="langTab"/>
-			<item value="eldest"/>
-			<item value="Eldest"/>
-			<item value="Male"/>
-			<item value="Height"/>
-			<item value="regent"/>
+			<item value="chckbxConsoleOutput"/>
+			<item value="chckbxNewCheckBox"/>
+			<item value="rdbtnNewRadioButton_1"/>
+			<item value="rgraphicalRDB"/>
+			<item value="dbtnNewRadioButton"/>
+			<item value="india"/>
+			<item value="norw"/>
+			<item value="int"/>
 		</list>
 		<list key="replacehistory">
-			<item value="Ending"/>
-			<item value="endingMonth"/>
-			<item value="languagesList"/>
-			<item value="biggest"/>
-			<item value="Largest"/>
-			<item value="Female"/>
-			<item value="Weight"/>
-			<item value="Speed"/>
+			<item value="consoleCheckBox"/>
+			<item value="graphCheckBox"/>
+			<item value="consRadioButton"/>
+			<item value="grapRadioButton"/>
+			<item value="graphicalRDB"/>
+			<item value="Float"/>
+			<item value="weeksTab"/>
+			<item value="this.weeks"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="381" key="DIALOG_HEIGHT"/>
-		<item value="1058" key="DIALOG_X_ORIGIN"/>
+		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="710" key="DIALOG_X_ORIGIN"/>
 		<item value="605" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
