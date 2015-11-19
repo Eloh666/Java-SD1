@@ -22,6 +22,11 @@ public class Parser {
 		
 		this.weeksTab = parseWeeks(weeksTab);
 		this.yearsTab = parseYears(yearsTab,sY,eY);
+		
+		for(Week w: weeksTab)
+		{
+			System.out.println(w);
+		}
 	}
 	
 	public String question11()
@@ -124,14 +129,14 @@ public class Parser {
 			Float averageSeptOct = 0f;
 			Integer counterAcYear = 0;
 			
-			averageSeptOct =(auxStructure.get(i).get(9).getValueForLanguage(0)
-							+ auxStructure.get(i).get(10).getValueForLanguage(0))/61;
+			averageSeptOct =(auxStructure.get(i).get(9).getValueForLanguage(1)
+							+ auxStructure.get(i).get(10).getValueForLanguage(1))/61;
 			
 			for(Integer j = 1; j < 12; j++)
 			{
 				if(j >= 9)
 				{
-					averageAcYear += auxStructure.get(i).get(j).getValueForLanguage(0);
+					averageAcYear += auxStructure.get(i).get(j).getValueForLanguage(1);
 					counterAcYear += auxStructure.get(i).get(j).getWeeks();
 				}
 				
@@ -139,7 +144,7 @@ public class Parser {
 				{
 					if(j <= 8)
 					{
-						averageAcYear += auxStructure.get(i+1).get(j).getValueForLanguage(0);
+						averageAcYear += auxStructure.get(i+1).get(j).getValueForLanguage(1);
 						counterAcYear += auxStructure.get(i).get(j).getWeeks();
 					}
 				}
@@ -280,15 +285,15 @@ public class Parser {
 		
 		for(Week curWeek : weeks)                    
 		{
-			if(curWeek.getStartingMonth() == curWeek.getEndingMonth())
+			if(curWeek.getStartDate().getMonthValue() == curWeek.getEndDate().getMonthValue())
 			{
 				Float temp[] = {0f,0f,0f,0f,0f};
 				for(Integer i = 0; i<5; i++)
 				{
 					temp[i] += (float) curWeek.getLangTab().getlanguagesList().get(i)*7;
 				}
-				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).addDays(7);
-				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).getValue().addAll(Arrays.asList(temp));
+				auxStructure.get(curWeek.getStartDate().getYear()).get(curWeek.getStartDate().getMonthValue()).addDays(7);
+				auxStructure.get(curWeek.getStartDate().getYear()).get(curWeek.getStartDate().getMonthValue()).getValue().addAll(Arrays.asList(temp));
 			}
 			
 			else
@@ -296,18 +301,18 @@ public class Parser {
 				Float temp[] = {0f,0f,0f,0f,0f};
 				for(Integer i = 0; i<5; i++)
 				{
-					temp[i] += ((float) curWeek.getLangTab().getlanguagesList().get(i))*(7-curWeek.getEndingDay());
+					temp[i] += ((float) curWeek.getLangTab().getlanguagesList().get(i))*(7-curWeek.getEndDate().getDayOfMonth());
 				}
-				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).addDays(7-curWeek.getEndingDay());
-				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).getValue().addAll(Arrays.asList(temp));
+				auxStructure.get(curWeek.getStartDate().getYear()).get(curWeek.getStartDate().getMonthValue()).addDays(7-curWeek.getEndDate().getDayOfMonth());
+				auxStructure.get(curWeek.getStartDate().getYear()).get(curWeek.getStartDate().getMonthValue()).getValue().addAll(Arrays.asList(temp));
 				
 				Float temp2[] = {0f,0f,0f,0f,0f};
 				for(Integer i = 0; i<5; i++)
 				{
-					temp2[i] += ((float) curWeek.getLangTab().getlanguagesList().get(i))*curWeek.getEndingDay();
+					temp2[i] += ((float) curWeek.getLangTab().getlanguagesList().get(i))*curWeek.getEndDate().getDayOfMonth();
 				}
-				auxStructure.get(curWeek.getEndingYear()).get(curWeek.getEndingMonth()).addDays(curWeek.getEndingDay());
-				auxStructure.get(curWeek.getEndingYear()).get(curWeek.getEndingMonth()).getValue().addAll(Arrays.asList(temp2));
+				auxStructure.get(curWeek.getStartDate().getYear()).get(curWeek.getEndDate().getMonthValue()).addDays(curWeek.getEndDate().getDayOfMonth());
+				auxStructure.get(curWeek.getStartDate().getYear()).get(curWeek.getEndDate().getMonthValue()).getValue().addAll(Arrays.asList(temp2));
 			}
 		}
 		return auxStructure;

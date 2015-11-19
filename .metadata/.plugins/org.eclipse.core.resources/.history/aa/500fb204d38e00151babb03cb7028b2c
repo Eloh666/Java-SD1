@@ -1,0 +1,49 @@
+import java.time.LocalDate;
+
+public class Week {
+	
+	//TODO check local date
+	
+	private LocalDate startDate;
+	private LocalDate endDate;
+	private LanguagesTab langTab;
+
+	public Week(String raw) 
+	{
+		String tabSplit[];
+		String spaceSplit[];
+		tabSplit = raw.split("\t");
+		this.langTab = new LanguagesTab();
+		for(Integer i = 1; i < 6; i++)
+			langTab.getlanguagesList().add(Integer.parseInt(tabSplit[i]));        
+		spaceSplit = tabSplit[0].split(" ");
+		
+		this.startDate.parse(tabSplit[0]);
+		this.endDate.parse(tabSplit[2]);
+	}
+	
+	
+	
+	
+	public String toString()         // not really great, but at least it returns the text 
+	{								// in even columns as it was provided
+		
+		
+		return String.format("%d-%02d-%02d   %d-%02d-%02d\t %d   %d   %d   %d   %d%n", 
+				langTab.getJava(),
+				langTab.getCpp(),
+				langTab.getCs(),
+				langTab.getPy(),
+				langTab.getJs());
+	}
+
+	public LanguagesTab getLangTab() {
+		return langTab;
+	}
+
+	public void setLangTab(LanguagesTab langTab) {
+		this.langTab = langTab;
+	}
+		
+
+}
