@@ -51,7 +51,7 @@ public class CourseWork2 {
 		frmCourseworkGui.setAlwaysOnTop(true);
 		frmCourseworkGui.setTitle("CourseWork 2 GUI");
 		frmCourseworkGui.getContentPane().setBackground(Color.LIGHT_GRAY);
-		frmCourseworkGui.setBounds(100, 100, 852, 698);
+		frmCourseworkGui.setBounds(100, 100, 852, 535);
 		frmCourseworkGui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmCourseworkGui.getContentPane().setLayout(null);
 		
@@ -59,18 +59,18 @@ public class CourseWork2 {
 		formattedTextField.setBackground(Color.DARK_GRAY);
 		formattedTextField.setForeground(Color.GREEN);
 		formattedTextField.setFont(new Font("Microsoft YaHei", Font.PLAIN, 12));
-		formattedTextField.setBounds(354, 36, 460, 594);
+		formattedTextField.setBounds(354, 36, 460, 412);
 		frmCourseworkGui.getContentPane().add(formattedTextField);
 		formattedTextField.setEditable(false);
 		
 		JCheckBox graphCheckBox = new JCheckBox("Grapical Output");
 		graphCheckBox.setBackground(Color.LIGHT_GRAY);
-		graphCheckBox.setBounds(20, 489, 208, 23);
+		graphCheckBox.setBounds(354, 455, 208, 23);
 		frmCourseworkGui.getContentPane().add(graphCheckBox);
 		
 		JCheckBox consoleCheckBox = new JCheckBox("Console Output");
 		consoleCheckBox.setBackground(Color.LIGHT_GRAY);
-		consoleCheckBox.setBounds(20, 516, 194, 23);
+		consoleCheckBox.setBounds(620, 455, 194, 23);
 		frmCourseworkGui.getContentPane().add(consoleCheckBox);
 		
 		graphCheckBox.setSelected(true);

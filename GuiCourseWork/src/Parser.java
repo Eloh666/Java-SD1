@@ -67,7 +67,7 @@ public class Parser {
 	// Question 12 hard mode version
 	public String question12()
 	{
-		TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>> auxStructure = transformWeeks(weeksTab,sY,eY);
+		TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>> auxStructure = transformWeeks();
 		
 		Integer langIdent = -1;
 		Float biggestDrop = 0f;
@@ -112,7 +112,7 @@ public class Parser {
 	// Question 13
 	public String question13()
 	{
-		TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>> auxStructure = transformWeeks(weeksTab,sY,eY);
+		TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>> auxStructure = transformWeeks();
 		String answer = "The usage statistics for java between between September/October"
 				+ " and \nthe rest of the academic year for the given dataset are following: \n\n"
 				+ "Academic Year       Sept/October       Full Year            Delta\n";
@@ -160,7 +160,7 @@ public class Parser {
 		
 		for(Week week: weeksTab)
 		{
-			for(Integer i = 0; i < 5; i++)
+			for(Integer i = 0; i < 5; i++)          //TODO putIfAbsent
 			{
 				if(sigma.containsKey(i.toString()))
 				{
@@ -219,11 +219,12 @@ public class Parser {
 	// Question 15
 	public String question15()
 	{
-		Integer head[] = {0,0,0,0,0};
-		Integer tail[] = {0,0,0,0,0};
+		Integer head = new Integer(0);
+		Integer tail = new Integer(0);
+		Integer value = new Integer(0);
+		Integer language = new Integer(0);
 		Integer tempHead[] = {0,0,0,0,0};
 		Integer tempTail[] = {0,0,0,0,0};
-		Integer value[] = {0,0,0,0,0};
 		Integer tempValue[] = {0,0,0,0,0};
 		String answer = "The deepest decline is found for ";
 		
@@ -235,11 +236,11 @@ public class Parser {
 				{
 					tempValue[j] += (weeksTab.get(i-1).getLangTab().getlanguagesList().get(j) - weeksTab.get(i).getLangTab().getlanguagesList().get(j));
 					tempTail[j] = i;
-					if(tempValue[j] > value[j])
+					if(tempValue[j] > value)
 					{
-						value[j] = tempValue[j];
-						head[j] = tempHead[j];
-						tail[j] = tempTail[j];
+						value = tempValue[j];
+						head = tempHead[j];
+						tail = tempTail[j];
 					}
 				}
 				else
@@ -250,21 +251,15 @@ public class Parser {
 				}
 			}
 		}
-		
-		for(Integer i = 0; i<5; i++)
-		{
-			if(value[i] == Collections.max(Arrays.asList(value)))
-			{
-				answer += decodeLanguage(i)+".\nThe timespam for the decline is the following:\n\n";
-				for(Integer j = head[i]; j<= tail[i]; j++)
-					answer += weeksTab.get(j).toString()+"\n";
-			}
-		}
+
+		answer += decodeLanguage(language)+".\nThe timespam for the decline is the following:\n\n";
+		for(Integer j = head; j<= tail; j++)
+			answer += weeksTab.get(j).toString();
 		return answer;
 	}
 	
 	//Creates an auxiliary data structures to easily access months based on the weeks IOT file
-	private TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>>  transformWeeks(ArrayList<Week> weeks, Integer sY, Integer eY)
+	private TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>>  transformWeeks()
 	{
 		TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>> auxStructure = new TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>>();
 		TreeMap<Integer,AuxMonthsBinder> temporaryBinder;
@@ -278,7 +273,7 @@ public class Parser {
 			auxStructure.put(i, temporaryBinder);
 		}
 		
-		for(Week curWeek : weeks)                    
+		for(Week curWeek : weeksTab)                    
 		{
 			if(curWeek.getStartingMonth() == curWeek.getEndingMonth())
 			{
