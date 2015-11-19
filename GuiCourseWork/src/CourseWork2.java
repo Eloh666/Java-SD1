@@ -5,10 +5,8 @@ import javax.swing.JTextPane;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.JFormattedTextField;
 import java.awt.Font;
 import java.awt.Color;
-import javax.swing.JRadioButton;
 import javax.swing.JCheckBox;
 
 public class CourseWork2 {
