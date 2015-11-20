@@ -2,30 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="contains" key="selection"/>
+		<item value=".getEndDate().getYear()" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value=".getEndingYear()"/>
+			<item value=".getStartingYear()"/>
+			<item value=".getStartingMonth()"/>
 			<item value="contains"/>
 			<item value="chckbxConsoleOutput"/>
 			<item value="chckbxNewCheckBox"/>
 			<item value="rdbtnNewRadioButton_1"/>
 			<item value="rgraphicalRDB"/>
-			<item value="dbtnNewRadioButton"/>
-			<item value="india"/>
-			<item value="norw"/>
 		</list>
 		<list key="replacehistory">
+			<item value=".getEndDate().getYear()"/>
+			<item value=".getStartDate().getYear()"/>
+			<item value=".getStartDate.GetMonthValue()"/>
 			<item value="consoleCheckBox"/>
 			<item value="graphCheckBox"/>
 			<item value="consRadioButton"/>
 			<item value="grapRadioButton"/>
 			<item value="graphicalRDB"/>
-			<item value="Float"/>
-			<item value="weeksTab"/>
-			<item value="this.weeks"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

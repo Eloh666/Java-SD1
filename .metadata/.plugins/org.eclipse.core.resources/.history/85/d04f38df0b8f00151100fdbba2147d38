@@ -275,15 +275,15 @@ public class Parser {
 		
 		for(Week curWeek : weeksTab)                    
 		{
-			if(curWeek.getStartDate().getMonthValue() == curWeek.getEndDate().getMonthValue())
+			if(curWeek.getStartingMonth() == curWeek.getEndingMonth())
 			{
 				Float temp[] = {0f,0f,0f,0f,0f};
 				for(Integer i = 0; i<5; i++)
 				{
 					temp[i] += (float) curWeek.getLangTab().getlanguagesList().get(i)*7;
 				}
-				auxStructure.get(curWeek.getStartDate().getYear()).get(curWeek.getStartDate().getMonthValue()).addDays(7);
-				auxStructure.get(curWeek.getStartDate().getYear()).get(curWeek.getStartDate().getMonthValue()).getValue().addAll(Arrays.asList(temp));
+				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).addDays(7);
+				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).getValue().addAll(Arrays.asList(temp));
 			}
 			
 			else
@@ -291,18 +291,18 @@ public class Parser {
 				Float temp[] = {0f,0f,0f,0f,0f};
 				for(Integer i = 0; i<5; i++)
 				{
-					temp[i] += ((float) curWeek.getLangTab().getlanguagesList().get(i))*(7-curWeek.getEndDate().getDayOfMonth());
+					temp[i] += ((float) curWeek.getLangTab().getlanguagesList().get(i))*(7-curWeek.getEndingDay());
 				}
-				auxStructure.get(curWeek.getStartDate().getYear()).get(curWeek.getStartDate().getMonthValue()).addDays(7-curWeek.getEndDate().getDayOfMonth());
-				auxStructure.get(curWeek.getStartDate().getYear()).get(curWeek.getStartDate().getMonthValue()).getValue().addAll(Arrays.asList(temp));
+				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).addDays(7-curWeek.getEndingDay());
+				auxStructure.get(curWeek.getStartingYear()).get(curWeek.getStartingMonth()).getValue().addAll(Arrays.asList(temp));
 				
 				Float temp2[] = {0f,0f,0f,0f,0f};
 				for(Integer i = 0; i<5; i++)
 				{
-					temp2[i] += ((float) curWeek.getLangTab().getlanguagesList().get(i))*curWeek.getEndDate().getDayOfMonth();
+					temp2[i] += ((float) curWeek.getLangTab().getlanguagesList().get(i))*curWeek.getEndingDay();
 				}
-				auxStructure.get(curWeek.getEndDate().getYear()).get(curWeek.getEndDate().getMonthValue()).addDays(curWeek.getEndDate().getDayOfMonth());
-				auxStructure.get(curWeek.getEndDate().getYear()).get(curWeek.getEndDate().getMonthValue()).getValue().addAll(Arrays.asList(temp2));
+				auxStructure.get(curWeek.getEndingYear()).get(curWeek.getEndingMonth()).addDays(curWeek.getEndingDay());
+				auxStructure.get(curWeek.getEndingYear()).get(curWeek.getEndingMonth()).getValue().addAll(Arrays.asList(temp2));
 			}
 		}
 		return auxStructure;
@@ -324,7 +324,7 @@ public class Parser {
 			return "Not found";		
 	}
 	
-	private String decodeMonth (Integer value) //TODO get rid of this shit
+	private String decodeMonth (Integer value)
 	{
 		if(value == 1)
 			return "January";

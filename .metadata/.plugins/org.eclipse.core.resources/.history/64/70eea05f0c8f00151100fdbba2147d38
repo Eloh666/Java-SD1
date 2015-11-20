@@ -247,7 +247,7 @@ public class Parser {
 				{
 					tempHead[j] = i;
 					tempTail[j] = i;
-					tempValue[j] = 0;
+					tempValue[j] = 0;aaaaa
 				}
 			}
 		}
@@ -324,7 +324,7 @@ public class Parser {
 			return "Not found";		
 	}
 	
-	private String decodeMonth (Integer value) //TODO get rid of this shit
+	private String decodeMonth (Integer value)
 	{
 		if(value == 1)
 			return "January";
