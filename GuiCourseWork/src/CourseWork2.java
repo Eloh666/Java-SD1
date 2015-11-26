@@ -5,11 +5,18 @@ import javax.swing.JTextPane;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.JFormattedTextField;
 import java.awt.Font;
 import java.awt.Color;
-import javax.swing.JRadioButton;
 import javax.swing.JCheckBox;
+
+
+/*
+ * Simply Gui written with the Swing designer
+ * on eclipse itself.
+ * No particular reason has been taken in consideration
+ * for using swing over QT (which i like for Python) aside
+ * the fact that it was already there with Eclipse Mars.
+ */
 
 public class CourseWork2 {
 
@@ -55,6 +62,11 @@ public class CourseWork2 {
 		frmCourseworkGui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmCourseworkGui.getContentPane().setLayout(null);
 		
+		/*
+		 * Read only widget that holds the text
+		 * if the user chooses to display it graphically
+		 */
+		
 		JTextPane formattedTextField = new JTextPane();
 		formattedTextField.setBackground(Color.DARK_GRAY);
 		formattedTextField.setForeground(Color.GREEN);
@@ -63,10 +75,19 @@ public class CourseWork2 {
 		frmCourseworkGui.getContentPane().add(formattedTextField);
 		formattedTextField.setEditable(false);
 		
+		/*
+		 * Checkbox to display the answer on the main widget
+		 * Default selected.
+		 */
+		
 		JCheckBox graphCheckBox = new JCheckBox("Grapical Output");
 		graphCheckBox.setBackground(Color.LIGHT_GRAY);
 		graphCheckBox.setBounds(354, 455, 208, 23);
 		frmCourseworkGui.getContentPane().add(graphCheckBox);
+		
+		/*
+		 * Checkbox to display the answer on the console
+		 */
 		
 		JCheckBox consoleCheckBox = new JCheckBox("Console Output");
 		consoleCheckBox.setBackground(Color.LIGHT_GRAY);
@@ -75,6 +96,13 @@ public class CourseWork2 {
 		
 		graphCheckBox.setSelected(true);
 		
+		/*
+		 * One button per answer. The result is calculated 
+		 * and printed depending on the checkboxes.
+		 * If both selected the question is calculated twice,
+		 * which is not ideal, however I believe it kinda esulates
+		 * from the target of the coursework!
+		 */
 		
 		JButton button1 = new JButton("Question 11");
 		button1.setBackground(Color.GRAY);

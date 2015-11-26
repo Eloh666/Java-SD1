@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+
+public class Year {
+	
+	private Integer yearValue;              // slight repetition considering I'm using the year in a TreeMap, but I might need it
+	private ArrayList<Country> countries;
+	
+	public Year(Integer yearValue)
+	{
+		this.yearValue = yearValue;
+		this.countries = new ArrayList<Country>();
+	}
+
+	public Integer getYearValue() {
+		return yearValue;
+	}
+
+	public void setYearValue(Integer yearValue) {
+		this.yearValue = yearValue;
+	}
+
+	public ArrayList<Country> getCountries() {
+		return countries;
+	}
+
+	public void setCountries(ArrayList<Country> countries) {
+		this.countries = countries;
+	}
+	
+	@Override
+	public String toString()  // simple to string method override
+	{
+		String temp = new String();
+		for(Country cntry : countries)
+		{
+			temp = temp+= "\n"+cntry.getCountryName()+"\t"+cntry.getLangTab().toString();
+		}			
+		return temp;
+	}
+}

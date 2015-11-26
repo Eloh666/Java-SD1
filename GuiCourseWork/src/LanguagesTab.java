@@ -1,5 +1,14 @@
 import java.util.ArrayList;
 
+
+/*
+ * The class basically consists in an 
+ * array of integer and a few related methods. 
+ * This could have been avoidable, but in the original design 
+ * and in general for safety I felt like 
+ * it might have been useful to have more freedom if needed.
+ */
+
 public class LanguagesTab {
 	
 	private ArrayList<Integer> languagesList;
@@ -66,22 +75,4 @@ public class LanguagesTab {
 		}
 		return temp;
 	}
-	
-	public String langFromNumber(int value)
-	{
-		String name = new String();
-		if (value == 0)
-			name = "Java";
-		if (value == 1)
-			name = "C++";
-		if (value == 2)
-			name = "C#";
-		if (value == 3)
-			name = "Python";
-		if (value == 4)
-			name = "JavaScript";
-		return name +"  "+ languagesList.get(value);
-	}
-	
-
 }

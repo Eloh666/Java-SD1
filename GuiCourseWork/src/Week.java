@@ -1,5 +1,14 @@
 import java.time.LocalDate;
 
+/*
+ * Class/Data structure that provides storage for each
+ * single line of the iot.txt file.
+ * Each weeks is built from a string and provides a few
+ * standard useful methods such as toString()
+ * Both the starting and the ending date of the week are
+ * implemented through the LocalDate library.
+ */
+
 public class Week {
 	
 	private LocalDate startDate;
@@ -25,13 +34,13 @@ public class Week {
 	{								// in even columns as it was provided
 		
 		
-		return this.startDate +" "
-				+ this.endDate +" "
-				+ this.getLangTab().getJava()+" "
-				+ this.getLangTab().getCpp()+" "
-				+ this.getLangTab().getCs()+" "
-				+ this.getLangTab().getPy()+" "
-				+ this.getLangTab().getJs()+" ";
+		return this.startDate +"	"
+				+ this.endDate +"	"
+				+ this.getLangTab().getJava()+"	"
+				+ this.getLangTab().getCpp()+"	"
+				+ this.getLangTab().getCs()+"	"
+				+ this.getLangTab().getPy()+"	"
+				+ this.getLangTab().getJs()+"\n";
 	}
 
 	public LanguagesTab getLangTab() {

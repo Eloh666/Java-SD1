@@ -1,5 +1,18 @@
 import java.util.ArrayList;
 
+/*
+ * Custom data structure for Question 12 and 13.
+ * Each single "AuxMonthsBinder" (yes I am not great with names)
+ * provides storage for a "calendar" month.
+ * Each month includes
+ * - A summative value for each day of that week.
+ * - A value for the number of days in that months,
+ *   dynamically calculated and and works with 29months Februaries.
+ * - An average value for the daily data for that specific month
+ * 
+ * The methods to add days are also provided.
+ */
+
 public class AuxMonthsBinder {
 
 	ArrayList<Float> values;
@@ -16,7 +29,7 @@ public class AuxMonthsBinder {
 		this.values = values;
 	}			
 	
-	public Integer getWeeks() {
+	public Integer getDays() {
 		return daysCount;
 	}
 	
@@ -24,6 +37,10 @@ public class AuxMonthsBinder {
 		this.daysCount = days;
 	}
 	
+	/*
+	 * calculates and returns the average usage
+	 * for the 5 languages of the sample
+	 */
 	public Float[] getAverage()
 	{
 		
@@ -46,6 +63,11 @@ public class AuxMonthsBinder {
 		return acc;
 	}
 	
+	/*
+	 * calculates and returns the
+	 * full data for a specific language
+	 */
+	
 	public Float getValueForLanguage(Integer language)
 	{
 		
@@ -59,11 +81,6 @@ public class AuxMonthsBinder {
 			acc[4] +=values.get(i+4) ;
 		}
 		return acc[language];
-	}
-	
-	public String toString()
-	{
-		return getAverage().toString();
 	}
 	
 	public void addDays(Integer days)

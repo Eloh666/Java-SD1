@@ -1,9 +1,17 @@
 
+
+/*
+ * The country class provides the storage for each single country "line"
+ * found in an year file.
+ */
 public class Country {
 	
 	private String countryName;
+	// tab with the language values for Java, C++ etc
 	private LanguagesTab langTab;
 	
+	
+	// Constructor for the week from a proper string
 	public Country(String raw)
 	{
 		this.langTab = new LanguagesTab();	

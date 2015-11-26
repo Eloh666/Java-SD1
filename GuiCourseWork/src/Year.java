@@ -1,9 +1,15 @@
 import java.util.ArrayList;
 
+/*
+ * Base class to store the YYYY.txt files
+ * It holds the value of the year as an integer (fx 2005)
+ * and an ArrayList of countries. Some extra useful methods are also available.
+ */
+
 public class Year {
 	
-	private Integer yearValue;              // slight repetition considering I'm using the year in a treemap, but I might need it
-	private ArrayList<Country> countries;    // bash me if I forget to delete the comment
+	private Integer yearValue;              // slight repetition considering I'm using the year in a TreeMap, but I might need it
+	private ArrayList<Country> countries;
 	
 	public Year(Integer yearValue)
 	{
@@ -34,7 +40,8 @@ public class Year {
 		countries.add(new Country(country));
 	}
 	
-	public String toString()
+	@Override
+	public String toString()  // simple to string method override
 	{
 		String temp = new String();
 		for(Country cntry : countries)
@@ -43,21 +50,4 @@ public class Year {
 		}			
 		return temp;
 	}
-	
-	public Country findCountry(String key)
-	{
-		Boolean found = false;
-		Country dummy = null;
-		for(Integer i = 0; i < countries.size() && !found; i++)
-		{
-			if(countries.get(i).getCountryName().equals(key))
-			{
-				found = true;
-				dummy = countries.get(i);
-			}
-		}
-		return dummy;
-		
-	}
-
 }

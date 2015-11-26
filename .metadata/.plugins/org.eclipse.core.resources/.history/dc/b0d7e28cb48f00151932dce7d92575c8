@@ -1,0 +1,11 @@
+import java.util.Comparator;
+
+public class CompTool implements Comparator {
+	
+	public int compare(String countryOne, String countryTwo)
+	{
+		Comparable countryOneValue = (Comparable) map.get(countryOne);
+		Comparable countryTwoValue = (Comparable) map.get(countryTwo);
+		return countryTwoValue.compareTo(ValueA);
+	}
+}

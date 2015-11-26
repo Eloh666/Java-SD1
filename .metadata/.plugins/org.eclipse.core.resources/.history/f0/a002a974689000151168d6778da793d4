@@ -1,0 +1,20 @@
+import java.util.Comparator;
+import java.util.Map;
+
+public class CompTool implements Comparator<Float> {
+	
+	Map<String, IncreaseDetails> unsortedMap;
+	
+	public CompTool(Map<String, IncreaseDetails> unsortedMap)
+	{
+		this.unsortedMap = unsortedMap;
+	}
+	
+	public int compare(Float countryOne, Float countryTwo)
+	{
+		Float countryOneValue = unsortedMap.get(countryOne).getRealIncrease();
+		Float countryTwoValue = unsortedMap.get(countryTwo).getRealIncrease();
+		return countryTwoValue.compareTo(countryOneValue);
+	}
+
+}
