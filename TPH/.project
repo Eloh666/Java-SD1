@@ -14,4 +14,16 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/matrix-code.ttf</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/matrix-code.ttf</locationURI>
+		</link>
+		<link>
+			<name>src/matrix.ttf</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/Downloads/matrix.ttf</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

@@ -135,7 +135,7 @@ public class Parser {
 	public String question12()
 	{
 		/* New custom data structure to properly hold the averages for the months.
-		 * the new auxiliar data structure is created by the method "transformWeeks()"
+		 * the new auxiliary data structure is created by the method "transformWeeks()"
 		 */
 		TreeMap<Integer,TreeMap<Integer,AuxMonthsBinder>> auxStructure = transformWeeks();
 		

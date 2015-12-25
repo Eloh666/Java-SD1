@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="/12" key="selection"/>
+		<item value="TEXT" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="text"/>
+			<item value="WurmAPI"/>
+			<item value="api"/>
+			<item value="Wurm"/>
 			<item value="/12"/>
 			<item value="format"/>
 			<item value="eY"/>
 			<item value="2004"/>
-			<item value=".getEndingYear()"/>
-			<item value=".getStartingYear()"/>
-			<item value=".getStartingMonth()"/>
-			<item value="contains"/>
 		</list>
 		<list key="replacehistory">
 			<item value=".getEndDate().getYear()"/>
